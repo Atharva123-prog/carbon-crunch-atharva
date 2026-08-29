@@ -10,13 +10,14 @@ class SummaryGenerator:
         transaction_count = len(receipt_results)
         store_spend_map = {}
         store_count_map = {}
+        item_stats_map = {}
         reliable_count = 0
         unreliable_count = 0
         transactions_detail = []
+        total_items_purchased = 0
 
         for rec in receipt_results:
             conf_data = rec.get("confidence_output", {})
-            struct_data = rec.get("structured_output", {})
 
             tot_val_str = conf_data.get("total_amount", {}).get("value", "0.00")
             try:
@@ -40,10 +41,34 @@ class SummaryGenerator:
             store_spend_map[store_name] = store_spend_map.get(store_name, 0.0) + tot_val
             store_count_map[store_name] = store_count_map.get(store_name, 0) + 1
 
+            items_list = conf_data.get("items", {}).get("value", [])
+            receipt_item_count = 0
+
+            for it in items_list:
+                iname = it.get("name", "").strip().upper()
+                iprice_str = it.get("price", "0.00")
+                try:
+                    iprice = float(iprice_str)
+                except ValueError:
+                    iprice = 0.0
+
+                if iname and len(iname) >= 2:
+                    receipt_item_count += 1
+                    total_items_purchased += 1
+                    if iname not in item_stats_map:
+                        item_stats_map[iname] = {
+                            "item_name": iname,
+                            "quantity_purchased": 0,
+                            "total_spent": 0.0
+                        }
+                    item_stats_map[iname]["quantity_purchased"] += 1
+                    item_stats_map[iname]["total_spent"] += iprice
+
             transactions_detail.append({
                 "receipt_id": rec.get("receipt_id", ""),
                 "store_name": store_name,
                 "date": date_str,
+                "items_count": receipt_item_count,
                 "total_amount": round(tot_val, 2),
                 "is_reliable": is_reliable
             })
@@ -60,15 +85,30 @@ class SummaryGenerator:
                 "percentage_of_total": round((sspend / total_spend * 100.0), 2) if total_spend > 0 else 0.0
             }
 
+        purchased_items_breakdown = []
+        for iname, istats in item_stats_map.items():
+            qty = istats["quantity_purchased"]
+            tot = round(istats["total_spent"], 2)
+            avg_unit = round(tot / qty, 2) if qty > 0 else 0.0
+            purchased_items_breakdown.append({
+                "item_name": iname,
+                "quantity_purchased": qty,
+                "total_spent": tot,
+                "average_unit_price": avg_unit
+            })
+
+        purchased_items_breakdown.sort(key=lambda x: x["total_spent"], reverse=True)
         highest_tx = max(transactions_detail, key=lambda x: x["total_amount"]) if transactions_detail else None
 
         summary_output = {
             "financial_summary": {
                 "total_spend": total_spend,
                 "number_of_transactions": transaction_count,
+                "total_items_purchased": total_items_purchased,
                 "average_transaction_spend": avg_spend,
                 "highest_transaction": highest_tx,
-                "spend_per_store": spend_per_store
+                "spend_per_store": spend_per_store,
+                "purchased_items_breakdown": purchased_items_breakdown
             },
             "reliability_summary": {
                 "reliable_transactions_count": reliable_count,

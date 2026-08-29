@@ -74,6 +74,7 @@ def test_summary_generator():
                 "store_name": {"value": "WALMART"},
                 "date": {"value": "2023-08-15"},
                 "total_amount": {"value": "25.50"},
+                "items": {"value": [{"name": "MILK", "price": "3.50"}, {"name": "BREAD", "price": "2.50"}]},
                 "overall_reliability": {"is_reliable": True}
             }
         },
@@ -83,6 +84,7 @@ def test_summary_generator():
                 "store_name": {"value": "TARGET"},
                 "date": {"value": "2023-08-16"},
                 "total_amount": {"value": "14.50"},
+                "items": {"value": [{"name": "MILK", "price": "3.50"}]},
                 "overall_reliability": {"is_reliable": True}
             }
         }
@@ -91,3 +93,7 @@ def test_summary_generator():
     assert summary["financial_summary"]["total_spend"] == 40.00
     assert summary["financial_summary"]["number_of_transactions"] == 2
     assert summary["financial_summary"]["average_transaction_spend"] == 20.00
+    assert summary["financial_summary"]["total_items_purchased"] == 3
+    assert len(summary["financial_summary"]["purchased_items_breakdown"]) == 2
+    assert summary["financial_summary"]["purchased_items_breakdown"][0]["item_name"] == "MILK"
+    assert summary["financial_summary"]["purchased_items_breakdown"][0]["quantity_purchased"] == 2

@@ -40,8 +40,8 @@
     "average_confidence": 0.54,
     "is_reliable": false,
     "warnings": [
-      "Low confidence line items",
-      "Total amount is zero or negative"
+      "Total amount is zero or negative",
+      "Low confidence line items"
     ]
   }
 }
