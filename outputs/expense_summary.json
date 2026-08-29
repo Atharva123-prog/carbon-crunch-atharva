@@ -1,15 +1,552 @@
 {
   "financial_summary": {
-    "total_spend": 0.0,
-    "number_of_transactions": 0,
-    "average_transaction_spend": 0.0,
-    "highest_transaction": null,
-    "spend_per_store": {}
+    "total_spend": 48789.58,
+    "number_of_transactions": 49,
+    "average_transaction_spend": 995.71,
+    "highest_transaction": {
+      "receipt_id": "0",
+      "store_name": "WALMART",
+      "date": "UNKNOWN",
+      "total_amount": 45679.83,
+      "is_reliable": false
+    },
+    "spend_per_store": {
+      "WALMART": {
+        "total_spend": 45910.82,
+        "transaction_count": 12,
+        "average_spend": 3825.9,
+        "percentage_of_total": 94.1
+      },
+      "joiOES GOlEI Cfzsll": {
+        "total_spend": 438.68,
+        "transaction_count": 1,
+        "average_spend": 438.68,
+        "percentage_of_total": 0.9
+      },
+      "SpADQ": {
+        "total_spend": 210.68,
+        "transaction_count": 1,
+        "average_spend": 210.68,
+        "percentage_of_total": 0.43
+      },
+      "WHZLE": {
+        "total_spend": 45.44,
+        "transaction_count": 1,
+        "average_spend": 45.44,
+        "percentage_of_total": 0.09
+      },
+      "WAL-MART": {
+        "total_spend": 17.45,
+        "transaction_count": 1,
+        "average_spend": 17.45,
+        "percentage_of_total": 0.04
+      },
+      "DOLLAR TREE": {
+        "total_spend": 0.0,
+        "transaction_count": 1,
+        "average_spend": 0.0,
+        "percentage_of_total": 0.0
+      },
+      "Dollar Tnee Stores Inc.": {
+        "total_spend": 510.21,
+        "transaction_count": 1,
+        "average_spend": 510.21,
+        "percentage_of_total": 1.05
+      },
+      "WHOLE FOODS": {
+        "total_spend": 0.0,
+        "transaction_count": 1,
+        "average_spend": 0.0,
+        "percentage_of_total": 0.0
+      },
+      "53 Jnd": {
+        "total_spend": 175.0,
+        "transaction_count": 1,
+        "average_spend": 175.0,
+        "percentage_of_total": 0.36
+      },
+      "coxc": {
+        "total_spend": 85.61,
+        "transaction_count": 1,
+        "average_spend": 85.61,
+        "percentage_of_total": 0.18
+      },
+      "winco": {
+        "total_spend": 121.52,
+        "transaction_count": 1,
+        "average_spend": 121.52,
+        "percentage_of_total": 0.25
+      },
+      "tan woon yann": {
+        "total_spend": 69.31,
+        "transaction_count": 4,
+        "average_spend": 17.33,
+        "percentage_of_total": 0.14
+      },
+      "TESCO": {
+        "total_spend": 50.0,
+        "transaction_count": 1,
+        "average_spend": 50.0,
+        "percentage_of_total": 0.1
+      },
+      "tan chay yee": {
+        "total_spend": 780.0,
+        "transaction_count": 5,
+        "average_spend": 156.0,
+        "percentage_of_total": 1.6
+      },
+      "13": {
+        "total_spend": 0.0,
+        "transaction_count": 1,
+        "average_spend": 0.0,
+        "percentage_of_total": 0.0
+      },
+      "6xy": {
+        "total_spend": 0.0,
+        "transaction_count": 1,
+        "average_spend": 0.0,
+        "percentage_of_total": 0.0
+      },
+      "Ix MVOICE V0  19729058": {
+        "total_spend": 4.9,
+        "transaction_count": 1,
+        "average_spend": 4.9,
+        "percentage_of_total": 0.01
+      },
+      "Qpser.": {
+        "total_spend": 12.5,
+        "transaction_count": 1,
+        "average_spend": 12.5,
+        "percentage_of_total": 0.03
+      },
+      "Jce": {
+        "total_spend": 70.6,
+        "transaction_count": 1,
+        "average_spend": 70.6,
+        "percentage_of_total": 0.14
+      },
+      "patue": {
+        "total_spend": 0.0,
+        "transaction_count": 1,
+        "average_spend": 0.0,
+        "percentage_of_total": 0.0
+      },
+      "BANDAR UTAMA BATANG KAi": {
+        "total_spend": 6.36,
+        "transaction_count": 1,
+        "average_spend": 6.36,
+        "percentage_of_total": 0.01
+      },
+      "Oy RM": {
+        "total_spend": 10.33,
+        "transaction_count": 1,
+        "average_spend": 10.33,
+        "percentage_of_total": 0.02
+      },
+      "Sekysen 8 Bandar Utama 44300": {
+        "total_spend": 8.0,
+        "transaction_count": 1,
+        "average_spend": 8.0,
+        "percentage_of_total": 0.02
+      },
+      "H E0g WnicoRN IUIN ISUFER Glue Usg-99 -": {
+        "total_spend": 20.0,
+        "transaction_count": 1,
+        "average_spend": 20.0,
+        "percentage_of_total": 0.04
+      },
+      "exeala 50": {
+        "total_spend": 8.88,
+        "transaction_count": 1,
+        "average_spend": 8.88,
+        "percentage_of_total": 0.02
+      },
+      "Home MaSTeR Hardwiare &": {
+        "total_spend": 50.0,
+        "transaction_count": 1,
+        "average_spend": 50.0,
+        "percentage_of_total": 0.1
+      },
+      "aant Bhzi 01.57.01": {
+        "total_spend": 0.0,
+        "transaction_count": 1,
+        "average_spend": 0.0,
+        "percentage_of_total": 0.0
+      },
+      "RESTORAN  HASSANBISTRO": {
+        "total_spend": 0.0,
+        "transaction_count": 1,
+        "average_spend": 0.0,
+        "percentage_of_total": 0.0
+      },
+      "93 Eoze0 Nant Sv8 515537-K": {
+        "total_spend": 160.17,
+        "transaction_count": 1,
+        "average_spend": 160.17,
+        "percentage_of_total": 0.33
+      },
+      "Asulart": {
+        "total_spend": 0.07,
+        "transaction_count": 1,
+        "average_spend": 0.07,
+        "percentage_of_total": 0.0
+      },
+      "CORPORATION S8": {
+        "total_spend": 23.05,
+        "transaction_count": 1,
+        "average_spend": 23.05,
+        "percentage_of_total": 0.05
+      }
+    }
   },
   "reliability_summary": {
     "reliable_transactions_count": 0,
-    "unreliable_transactions_count": 0,
+    "unreliable_transactions_count": 49,
     "reliability_percentage": 0.0
   },
-  "all_transactions": []
+  "all_transactions": [
+    {
+      "receipt_id": "0",
+      "store_name": "WALMART",
+      "date": "UNKNOWN",
+      "total_amount": 45679.83,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "1",
+      "store_name": "joiOES GOlEI Cfzsll",
+      "date": "UNKNOWN",
+      "total_amount": 438.68,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "10",
+      "store_name": "SpADQ",
+      "date": "UNKNOWN",
+      "total_amount": 210.68,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "11",
+      "store_name": "WHZLE",
+      "date": "UNKNOWN",
+      "total_amount": 45.44,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "12",
+      "store_name": "WAL-MART",
+      "date": "10/20/07",
+      "total_amount": 17.45,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "13",
+      "store_name": "WALMART",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "14",
+      "store_name": "WALMART",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "15",
+      "store_name": "WALMART",
+      "date": "01/22/16",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "16",
+      "store_name": "WALMART",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "17",
+      "store_name": "WALMART",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "18",
+      "store_name": "WALMART",
+      "date": "10.08.26",
+      "total_amount": 10.91,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "19",
+      "store_name": "WALMART",
+      "date": "10/16/21",
+      "total_amount": 157.79,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "2",
+      "store_name": "WALMART",
+      "date": "10/18/20",
+      "total_amount": 49.9,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "20",
+      "store_name": "DOLLAR TREE",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "21",
+      "store_name": "Dollar Tnee Stores Inc.",
+      "date": "UNKNOWN",
+      "total_amount": 510.21,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "3",
+      "store_name": "WALMART",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "4",
+      "store_name": "WALMART",
+      "date": "12/08/16",
+      "total_amount": 12.39,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "5",
+      "store_name": "WHOLE FOODS",
+      "date": "02/10/2021",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "6",
+      "store_name": "53 Jnd",
+      "date": "26/01/2015",
+      "total_amount": 175.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "7",
+      "store_name": "WALMART",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "8",
+      "store_name": "coxc",
+      "date": "UNKNOWN",
+      "total_amount": 85.61,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "9",
+      "store_name": "winco",
+      "date": "UNKNOWN",
+      "total_amount": 121.52,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469612",
+      "store_name": "tan woon yann",
+      "date": "UNKNOWN",
+      "total_amount": 9.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469619",
+      "store_name": "tan woon yann",
+      "date": "UNKNOWN",
+      "total_amount": 60.31,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469620",
+      "store_name": "TESCO",
+      "date": "UNKNOWN",
+      "total_amount": 50.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469622",
+      "store_name": "tan woon yann",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469623",
+      "store_name": "tan woon yann",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469669",
+      "store_name": "tan chay yee",
+      "date": "09/01/2019",
+      "total_amount": 70.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469670",
+      "store_name": "tan chay yee",
+      "date": "15/01/2019",
+      "total_amount": 193.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469671",
+      "store_name": "tan chay yee",
+      "date": "02/01/2019",
+      "total_amount": 170.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469672",
+      "store_name": "tan chay yee",
+      "date": "UNKNOWN",
+      "total_amount": 327.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X00016469676",
+      "store_name": "tan chay yee",
+      "date": "23-01-2019",
+      "total_amount": 20.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005200931",
+      "store_name": "13",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005200938",
+      "store_name": "6xy",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005230605",
+      "store_name": "Ix MVOICE V0  19729058",
+      "date": "UNKNOWN",
+      "total_amount": 4.9,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005230616",
+      "store_name": "Qpser.",
+      "date": "UNKNOWN",
+      "total_amount": 12.5,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005230617",
+      "store_name": "Jce",
+      "date": "UNKNOWN",
+      "total_amount": 70.6,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005230621",
+      "store_name": "patue",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005230648",
+      "store_name": "BANDAR UTAMA BATANG KAi",
+      "date": "29/01/2018",
+      "total_amount": 6.36,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005230657",
+      "store_name": "Oy RM",
+      "date": "UNKNOWN",
+      "total_amount": 10.33,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005230659",
+      "store_name": "Sekysen 8 Bandar Utama 44300",
+      "date": "08/01/2018",
+      "total_amount": 8.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005255805",
+      "store_name": "H E0g WnicoRN IUIN ISUFER Glue Usg-99 -",
+      "date": "29-12-2017",
+      "total_amount": 20.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005268200",
+      "store_name": "exeala 50",
+      "date": "UNKNOWN",
+      "total_amount": 8.88,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005268262",
+      "store_name": "Home MaSTeR Hardwiare &",
+      "date": "UNKNOWN",
+      "total_amount": 50.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005268275",
+      "store_name": "aant Bhzi 01.57.01",
+      "date": "UNKNOWN",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005268400",
+      "store_name": "RESTORAN  HASSANBISTRO",
+      "date": "2017-12-28",
+      "total_amount": 0.0,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005268408",
+      "store_name": "93 Eoze0 Nant Sv8 515537-K",
+      "date": "UNKNOWN",
+      "total_amount": 160.17,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005268472",
+      "store_name": "Asulart",
+      "date": "UNKNOWN",
+      "total_amount": 0.07,
+      "is_reliable": false
+    },
+    {
+      "receipt_id": "X51005288570",
+      "store_name": "CORPORATION S8",
+      "date": "UNKNOWN",
+      "total_amount": 23.05,
+      "is_reliable": false
+    }
+  ]
 }

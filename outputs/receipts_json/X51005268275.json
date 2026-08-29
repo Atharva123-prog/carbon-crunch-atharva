@@ -1,0 +1,37 @@
+{
+  "store_name": {
+    "value": "aant Bhzi 01.57.01",
+    "confidence": 0.47,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "aant Bhzi.01",
+        "price": "1.57"
+      }
+    ],
+    "confidence": 0.35,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "0.00",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.2,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence line items",
+      "Low confidence store name",
+      "Total amount is zero or negative",
+      "Missing transaction date"
+    ]
+  }
+}

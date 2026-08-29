@@ -1,0 +1,42 @@
+{
+  "store_name": {
+    "value": "CORPORATION S8",
+    "confidence": 0.8,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": ". Id 1459",
+        "price": "23.05"
+      },
+      {
+        "name": ".18 1527",
+        "price": "23.03"
+      }
+    ],
+    "confidence": 0.48,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "23.05",
+    "confidence": 0.34,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.41,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "Total amount is less than calculated sum of item prices",
+      "Low confidence line items",
+      "Low confidence total amount",
+      "Missing transaction date"
+    ]
+  }
+}

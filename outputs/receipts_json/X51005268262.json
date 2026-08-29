@@ -1,0 +1,59 @@
+{
+  "store_name": {
+    "value": "Home MaSTeR Hardwiare &",
+    "confidence": 0.49,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "SR",
+        "price": "15.90"
+      },
+      {
+        "name": "Subtotai",
+        "price": "15.90"
+      },
+      {
+        "name": "Told Aml Rounded",
+        "price": "15.90"
+      },
+      {
+        "name": "Parment -",
+        "price": "50.00"
+      },
+      {
+        "name": "Cange Due",
+        "price": "3.10"
+      },
+      {
+        "name": "G0",
+        "price": "0.90"
+      }
+    ],
+    "confidence": 0.65,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "50.00",
+    "confidence": 0.41,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.39,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "Total amount is less than calculated sum of item prices",
+      "Low confidence store name",
+      "Low confidence line items",
+      "Low confidence total amount",
+      "Missing transaction date"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "store_name": {
+    "value": "Asulart",
+    "confidence": 0.46,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "Doaro Cs0ib 00000",
+        "price": "0.07"
+      }
+    ],
+    "confidence": 0.31,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "0.07",
+    "confidence": 0.71,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.37,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence line items",
+      "Low confidence store name",
+      "Missing transaction date"
+    ]
+  }
+}

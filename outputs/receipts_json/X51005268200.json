@@ -1,0 +1,38 @@
+{
+  "store_name": {
+    "value": "exeala 50",
+    "confidence": 0.44,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "E8xnce",
+        "price": "8.88"
+      }
+    ],
+    "confidence": 0.44,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "8.88",
+    "confidence": 0.61,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.37,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "Low confidence store name",
+      "Low confidence line items",
+      "Low confidence total amount",
+      "Missing transaction date"
+    ]
+  }
+}
