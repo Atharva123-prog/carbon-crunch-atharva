@@ -1,0 +1,40 @@
+{
+  "store_name": {
+    "value": "WALMART",
+    "confidence": 0.71,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "BtttsIb Tibodike",
+        "price": "0.20"
+      },
+      {
+        "name": "FRAP 001200010451 F",
+        "price": "5.48"
+      }
+    ],
+    "confidence": 0.72,
+    "low_confidence": false
+  },
+  "total_amount": {
+    "value": "45679.83",
+    "confidence": 0.57,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.5,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence total amount",
+      "Missing transaction date",
+      "Total amount inferred without keyword anchor"
+    ]
+  }
+}

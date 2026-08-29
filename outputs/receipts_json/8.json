@@ -1,0 +1,79 @@
+{
+  "store_name": {
+    "value": "coxc",
+    "confidence": 0.48,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "X Ke-ber 1826278335",
+        "price": "23.99"
+      },
+      {
+        "name": "FFBS BREAST",
+        "price": "6.49"
+      },
+      {
+        "name": "KS DICED To4",
+        "price": "2.97"
+      },
+      {
+        "name": "I8ct EGGS",
+        "price": "12.87"
+      },
+      {
+        "name": "77053 GRiPe Tokato",
+        "price": "6.29"
+      },
+      {
+        "name": "ECO Hale Pan",
+        "price": "6.49"
+      },
+      {
+        "name": "GRHD IURKEY",
+        "price": "18.47"
+      },
+      {
+        "name": "Opd ONION",
+        "price": "3.59"
+      },
+      {
+        "name": "SubtoIAL",
+        "price": "85.61"
+      },
+      {
+        "name": "Check Merber Prntd",
+        "price": "9.13"
+      },
+      {
+        "name": "A7 IaX",
+        "price": "0.55"
+      }
+    ],
+    "confidence": 0.63,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "85.61",
+    "confidence": 0.52,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.41,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "Total amount is less than calculated sum of item prices",
+      "Low confidence store name",
+      "Low confidence line items",
+      "Low confidence total amount",
+      "Missing transaction date"
+    ]
+  }
+}

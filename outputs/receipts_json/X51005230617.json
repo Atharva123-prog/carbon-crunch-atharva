@@ -1,0 +1,40 @@
+{
+  "store_name": {
+    "value": "Jce",
+    "confidence": 0.5,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": ".J . Jalen 552140 Petaling Jara",
+        "price": "39.47"
+      },
+      {
+        "name": "Reg 019- 1801z018 I0",
+        "price": "21.02"
+      }
+    ],
+    "confidence": 0.44,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "70.60",
+    "confidence": 0.82,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.44,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence line items",
+      "Low confidence store name",
+      "Missing transaction date"
+    ]
+  }
+}

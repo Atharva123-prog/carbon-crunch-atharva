@@ -1,0 +1,29 @@
+{
+  "store_name": {
+    "value": "tan chay yee",
+    "confidence": 0.76,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "23-01-2019",
+    "confidence": 0.77,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [],
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "20.00",
+    "confidence": 0.87,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.6,
+    "is_reliable": false,
+    "warnings": [
+      "No items extracted"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "store_name": {
+    "value": "tan chay yee",
+    "confidence": 0.76,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "Jou 00j",
+        "price": "327.00"
+      }
+    ],
+    "confidence": 0.48,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "327.00",
+    "confidence": 0.63,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.47,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence total amount",
+      "Total amount inferred without keyword anchor",
+      "Low confidence line items",
+      "Missing transaction date"
+    ]
+  }
+}

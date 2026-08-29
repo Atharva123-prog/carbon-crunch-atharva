@@ -1,0 +1,68 @@
+{
+  "store_name": {
+    "value": "WALMART",
+    "confidence": 0.97,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "10/18/20",
+    "confidence": 0.84,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [
+      {
+        "name": "OAILEAL 007874243408 0",
+        "price": "1.76"
+      },
+      {
+        "name": "O12002 IA 081236803115",
+        "price": "6.74"
+      },
+      {
+        "name": "AIILEIICS 0191045677781",
+        "price": "24.91"
+      },
+      {
+        "name": "DEXAS 1570 008429710921",
+        "price": "12.97"
+      },
+      {
+        "name": "SuBIOIAL",
+        "price": "46.44"
+      },
+      {
+        "name": "C IM 10",
+        "price": "3.46"
+      },
+      {
+        "name": "TOIA",
+        "price": "49.90"
+      },
+      {
+        "name": "TOIALPUROMSE",
+        "price": "49.90"
+      },
+      {
+        "name": "1820.42",
+        "price": "11.30"
+      }
+    ],
+    "confidence": 0.77,
+    "low_confidence": false
+  },
+  "total_amount": {
+    "value": "49.90",
+    "confidence": 0.57,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.79,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence total amount",
+      "Total amount inferred without keyword anchor",
+      "Total amount is less than calculated sum of item prices"
+    ]
+  }
+}

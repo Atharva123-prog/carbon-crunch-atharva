@@ -1,0 +1,52 @@
+{
+  "store_name": {
+    "value": "WHZLE",
+    "confidence": 0.73,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "VC 42 off  Vc FiI",
+        "price": "2.00"
+      },
+      {
+        "name": "Californle Harvest",
+        "price": "2.69"
+      },
+      {
+        "name": "T PLUHS BLacK cv",
+        "price": "2.15"
+      },
+      {
+        "name": "MhP SLICED Ovem RO",
+        "price": "3.99"
+      },
+      {
+        "name": "NHP SLICED HICKORY",
+        "price": "3.99"
+      }
+    ],
+    "confidence": 0.6,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "45.44",
+    "confidence": 0.72,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.51,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "Missing transaction date",
+      "Low confidence line items"
+    ]
+  }
+}

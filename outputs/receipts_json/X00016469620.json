@@ -1,0 +1,50 @@
+{
+  "store_name": {
+    "value": "TESCO",
+    "confidence": 0.97,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "18350846 3. 88",
+        "price": "3.88"
+      },
+      {
+        "name": "TomaL Rm",
+        "price": "33.92"
+      },
+      {
+        "name": "Rounding Adjusthe Rh",
+        "price": "0.02"
+      },
+      {
+        "name": "Iotal Rounded 33.f0 Rh",
+        "price": "33.90"
+      }
+    ],
+    "confidence": 0.55,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "50.00",
+    "confidence": 0.49,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.5,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "Total amount is less than calculated sum of item prices",
+      "Low confidence line items",
+      "Low confidence total amount",
+      "Missing transaction date"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "store_name": {
+    "value": "Dollar Tnee Stores Inc.",
+    "confidence": 0.65,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "G30UL D8",
+        "price": "80.00"
+      },
+      {
+        "name": "SALES Ia",
+        "price": "0.21"
+      },
+      {
+        "name": "Cig BEEI",
+        "price": "310.00"
+      },
+      {
+        "name": "Mhere Evervthim S",
+        "price": "1.00"
+      }
+    ],
+    "confidence": 0.38,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "510.21",
+    "confidence": 0.89,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.48,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence line items",
+      "Low confidence store name",
+      "Missing transaction date"
+    ]
+  }
+}

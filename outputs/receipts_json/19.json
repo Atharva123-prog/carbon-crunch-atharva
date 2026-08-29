@@ -1,0 +1,52 @@
+{
+  "store_name": {
+    "value": "WALMART",
+    "confidence": 0.98,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "10/16/21",
+    "confidence": 0.81,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [
+      {
+        "name": "CRILL COMR 4178944021",
+        "price": "44.97"
+      },
+      {
+        "name": "CLERL Ieari 0u18 i1 F",
+        "price": "2.48"
+      },
+      {
+        "name": "Ib 1 6 I1dd",
+        "price": "3.64"
+      },
+      {
+        "name": "StopCAPD REDIPHIO",
+        "price": "35.05"
+      },
+      {
+        "name": "6652 6669 B05",
+        "price": "1.17"
+      }
+    ],
+    "confidence": 0.49,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "157.79",
+    "confidence": 0.68,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.74,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence total amount",
+      "Total amount inferred without keyword anchor",
+      "Low confidence line items"
+    ]
+  }
+}

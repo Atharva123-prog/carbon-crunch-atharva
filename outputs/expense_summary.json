@@ -1,0 +1,15 @@
+{
+  "financial_summary": {
+    "total_spend": 0.0,
+    "number_of_transactions": 0,
+    "average_transaction_spend": 0.0,
+    "highest_transaction": null,
+    "spend_per_store": {}
+  },
+  "reliability_summary": {
+    "reliable_transactions_count": 0,
+    "unreliable_transactions_count": 0,
+    "reliability_percentage": 0.0
+  },
+  "all_transactions": []
+}

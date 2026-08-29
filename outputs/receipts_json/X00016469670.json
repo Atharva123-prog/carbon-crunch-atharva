@@ -1,0 +1,43 @@
+{
+  "store_name": {
+    "value": "tan chay yee",
+    "confidence": 0.76,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "15/01/2019",
+    "confidence": 0.8,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [
+      {
+        "name": "Te 07-308 2218 Faa.8 0216",
+        "price": "7.30"
+      },
+      {
+        "name": "Dale 15012019 1. AM",
+        "price": "5.16"
+      },
+      {
+        "name": "CoCOOOI1 Sr",
+        "price": "193.00"
+      }
+    ],
+    "confidence": 0.51,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "193.00",
+    "confidence": 0.8,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.72,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence line items",
+      "Total amount is less than calculated sum of item prices"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "store_name": {
+    "value": "53 Jnd",
+    "confidence": 0.55,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "26/01/2015",
+    "confidence": 0.74,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [],
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "175.00",
+    "confidence": 0.92,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.55,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence store name",
+      "No items extracted"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "store_name": {
+    "value": "tan woon yann",
+    "confidence": 0.76,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [],
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "0.00",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.19,
+    "is_reliable": false,
+    "warnings": [
+      "No items extracted",
+      "Total amount is zero or negative",
+      "Missing transaction date"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "store_name": {
+    "value": "joiOES GOlEI Cfzsll",
+    "confidence": 0.45,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "ORCANIC Old FashiunEd",
+        "price": "2.69"
+      },
+      {
+        "name": "BanmS Oruanic",
+        "price": "0.87"
+      },
+      {
+        "name": "ea DEut",
+        "price": "0.79"
+      },
+      {
+        "name": "SIBIOIAL",
+        "price": "38.68"
+      },
+      {
+        "name": "TOT",
+        "price": "438.68"
+      }
+    ],
+    "confidence": 0.5,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "438.68",
+    "confidence": 0.43,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.34,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence line items",
+      "Missing transaction date",
+      "Total amount is less than calculated sum of item prices",
+      "Low confidence total amount",
+      "Total amount inferred without keyword anchor",
+      "Low confidence store name"
+    ]
+  }
+}

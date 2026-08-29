@@ -1,0 +1,32 @@
+{
+  "store_name": {
+    "value": "patue",
+    "confidence": 0.45,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [],
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "0.00",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.11,
+    "is_reliable": false,
+    "warnings": [
+      "No items extracted",
+      "Low confidence store name",
+      "Total amount is zero or negative",
+      "Missing transaction date"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "store_name": {
+    "value": "winco",
+    "confidence": 0.59,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [],
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "121.52",
+    "confidence": 0.53,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.28,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "No items extracted",
+      "Low confidence store name",
+      "Low confidence total amount",
+      "Missing transaction date"
+    ]
+  }
+}

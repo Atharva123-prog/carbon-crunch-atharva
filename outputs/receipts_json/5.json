@@ -1,0 +1,30 @@
+{
+  "store_name": {
+    "value": "WHOLE FOODS",
+    "confidence": 1.0,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "02/10/2021",
+    "confidence": 0.76,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [],
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "0.00",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.44,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount is zero or negative",
+      "No items extracted"
+    ]
+  }
+}

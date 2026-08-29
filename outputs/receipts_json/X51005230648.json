@@ -1,0 +1,35 @@
+{
+  "store_name": {
+    "value": "BANDAR UTAMA BATANG KAi",
+    "confidence": 0.63,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "29/01/2018",
+    "confidence": 0.74,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [
+      {
+        "name": "SrOA1",
+        "price": "0.36"
+      }
+    ],
+    "confidence": 0.57,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "6.36",
+    "confidence": 0.89,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.71,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence line items",
+      "Low confidence store name"
+    ]
+  }
+}

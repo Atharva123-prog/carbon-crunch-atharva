@@ -1,0 +1,62 @@
+{
+  "store_name": {
+    "value": "SpADQ",
+    "confidence": 0.51,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "LoI MOSTCR SALE WeA Qa",
+        "price": "16.93"
+      },
+      {
+        "name": "pealed Nts",
+        "price": "4.99"
+      },
+      {
+        "name": "NesTUE Ae0 0",
+        "price": "24.99"
+      },
+      {
+        "name": "VastiC Rice Jou 2n0 0.5",
+        "price": "21.93"
+      },
+      {
+        "name": "I.16",
+        "price": "15.93"
+      },
+      {
+        "name": "01A969 FO M Tus",
+        "price": "1.16"
+      },
+      {
+        "name": "alip M Csuer 6 16 17",
+        "price": "8.21"
+      }
+    ],
+    "confidence": 0.42,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "210.68",
+    "confidence": 0.58,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.38,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "Low confidence line items",
+      "Missing transaction date",
+      "Low confidence total amount",
+      "Low confidence store name"
+    ]
+  }
+}

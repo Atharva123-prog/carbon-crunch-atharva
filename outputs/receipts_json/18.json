@@ -1,0 +1,42 @@
+{
+  "store_name": {
+    "value": "WALMART",
+    "confidence": 0.97,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "10.08.26",
+    "confidence": 0.67,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "Ravieries F Orousiz G4 A Wmublld",
+        "price": "10.91"
+      },
+      {
+        "name": "Qann NnI Fan Olaldied Whipina",
+        "price": "2.91"
+      }
+    ],
+    "confidence": 0.36,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "10.91",
+    "confidence": 0.33,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.58,
+    "is_reliable": false,
+    "warnings": [
+      "Total amount inferred without keyword anchor",
+      "Total amount is less than calculated sum of item prices",
+      "Low confidence date",
+      "Low confidence line items",
+      "Low confidence total amount"
+    ]
+  }
+}

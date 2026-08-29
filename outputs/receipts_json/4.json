@@ -1,0 +1,31 @@
+{
+  "store_name": {
+    "value": "WALMART",
+    "confidence": 0.97,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "12/08/16",
+    "confidence": 0.75,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [],
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "12.39",
+    "confidence": 0.61,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.58,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence total amount",
+      "Total amount inferred without keyword anchor",
+      "No items extracted"
+    ]
+  }
+}

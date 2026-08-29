@@ -1,0 +1,36 @@
+{
+  "store_name": {
+    "value": "tan woon yann",
+    "confidence": 0.76,
+    "low_confidence": false
+  },
+  "date": {
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
+  },
+  "items": {
+    "value": [
+      {
+        "name": "disct 359",
+        "price": "10.00"
+      }
+    ],
+    "confidence": 0.43,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "60.31",
+    "confidence": 0.69,
+    "low_confidence": true
+  },
+  "overall_reliability": {
+    "average_confidence": 0.47,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence total amount",
+      "Low confidence line items",
+      "Missing transaction date"
+    ]
+  }
+}
