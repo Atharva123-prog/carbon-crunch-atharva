@@ -6,8 +6,7 @@ import pandas as pd
 from src.pipeline import ReceiptPipeline
 
 st.set_page_config(
-    page_title="CARBON CRUNCH - Receipt OCR & Financial Intelligence",
-    page_icon="🧾",
+    page_title="Receipt OCR & Financial Intelligence",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -20,24 +19,24 @@ st.markdown("""
     .stMetric {
         background-color: #1e222d;
         padding: 15px;
-        border-radius: 10px;
+        border-radius: 8px;
         border: 1px solid #2e364f;
     }
     .badge-high {
-        background-color: #10b981;
+        background-color: #059669;
         color: white;
-        padding: 3px 8px;
-        border-radius: 5px;
+        padding: 2px 8px;
+        border-radius: 4px;
         font-size: 12px;
-        font-weight: bold;
+        font-weight: 600;
     }
     .badge-low {
-        background-color: #ef4444;
+        background-color: #dc2626;
         color: white;
-        padding: 3px 8px;
-        border-radius: 5px;
+        padding: 2px 8px;
+        border-radius: 4px;
         font-size: 12px;
-        font-weight: bold;
+        font-weight: 600;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -48,18 +47,18 @@ def get_pipeline():
 
 pipeline = get_pipeline()
 
-st.title("🧾 CARBON CRUNCH - Receipt OCR & Financial Intelligence")
-st.markdown("Automated receipt parsing, field extraction, multi-factor confidence scoring & expense summary analytics.")
+st.title("Receipt Processing & Financial Extraction")
+st.markdown("Automated receipt parsing, field extraction, confidence scoring, and expense analytics.")
 
 raw_dir = "data/raw_receipts"
 output_dir = "outputs"
 json_dir = os.path.join(output_dir, "receipts_json")
 summary_file = os.path.join(output_dir, "expense_summary.json")
 
-tab1, tab2, tab3 = st.tabs(["🔍 Receipt Extractor", "📊 Expense Dashboard", "⚡ Batch Processor"])
+tab1, tab2, tab3 = st.tabs(["Receipt Extractor", "Expense Dashboard", "Batch Processing"])
 
 with tab1:
-    st.header("Single Receipt Information Extraction")
+    st.header("Single Receipt Extraction")
 
     receipt_files = []
     if os.path.exists(raw_dir):
@@ -67,9 +66,9 @@ with tab1:
 
     col_input, col_action = st.columns([3, 1])
     with col_input:
-        selected_file = st.selectbox("Select Receipt Image from Dataset:", receipt_files if receipt_files else ["None"])
+        selected_file = st.selectbox("Select Receipt Image:", receipt_files if receipt_files else ["None"])
     with col_action:
-        uploaded_file = st.file_uploader("Or Upload Receipt Image", type=["jpg", "jpeg", "png"])
+        uploaded_file = st.file_uploader("Upload Image", type=["jpg", "jpeg", "png"])
 
     active_image_path = None
     if uploaded_file is not None:
@@ -82,8 +81,8 @@ with tab1:
         active_image_path = os.path.join(raw_dir, selected_file)
 
     if active_image_path and os.path.exists(active_image_path):
-        if st.button("Process & Extract Key Information", type="primary"):
-            with st.spinner("Processing image, running EasyOCR and confidence scorer..."):
+        if st.button("Process Receipt", type="primary"):
+            with st.spinner("Extracting text and scoring confidence..."):
                 res = pipeline.process_single_receipt(active_image_path, save_visualization=True, output_dir=output_dir)
 
             c1, c2, c3 = st.columns(3)
@@ -97,7 +96,7 @@ with tab1:
                 else:
                     st.info("Visualization unavailable")
             with c3:
-                st.subheader("Extracted Metadata")
+                st.subheader("Extracted Fields")
                 conf_data = res["confidence_output"]
 
                 store_conf = conf_data["store_name"]["confidence"]
@@ -119,11 +118,11 @@ with tab1:
                 else:
                     st.write("No item lines identified")
 
-                st.subheader("Structured JSON Output")
+                st.subheader("JSON Output")
                 st.json(conf_data)
 
 with tab2:
-    st.header("Financial Expense Analytics Summary")
+    st.header("Financial Summary Analytics")
     if os.path.exists(summary_file):
         with open(summary_file, "r", encoding="utf-8") as f:
             summary_data = json.load(f)
@@ -132,9 +131,9 @@ with tab2:
         rel = summary_data.get("reliability_summary", {})
 
         m1, m2, m3, m4 = st.columns(4)
-        m1.metric("Total Expense", f"${fin.get('total_spend', 0.0):,.2f}")
-        m2.metric("Total Transactions", fin.get("number_of_transactions", 0))
-        m3.metric("Avg Transaction Spend", f"${fin.get('average_transaction_spend', 0.0):,.2f}")
+        m1.metric("Total Spend", f"${fin.get('total_spend', 0.0):,.2f}")
+        m2.metric("Transactions", fin.get("number_of_transactions", 0))
+        m3.metric("Avg Spend / Tx", f"${fin.get('average_transaction_spend', 0.0):,.2f}")
         m4.metric("Reliability Rate", f"{rel.get('reliability_percentage', 0.0)}%")
 
         st.divider()
@@ -157,13 +156,13 @@ with tab2:
             df_tx = pd.DataFrame(tx_list)
             st.dataframe(df_tx, use_container_width=True)
     else:
-        st.warning("Expense summary file not generated yet. Please run batch processing.")
+        st.warning("Expense summary file not generated. Run batch processing first.")
 
 with tab3:
     st.header("Batch Processing Engine")
-    st.write(f"Process all receipt images located in `{raw_dir}`.")
-    if st.button("Run Pipeline Batch Processing"):
+    st.write(f"Process all receipt images in `{raw_dir}`.")
+    if st.button("Run Batch Processing"):
         with st.spinner("Processing dataset receipts..."):
             batch_res = pipeline.process_directory(raw_dir, output_dir)
-            st.success(f"Batch processing completed! Processed {batch_res['processed_count']} receipts.")
+            st.success(f"Batch processing complete. Processed {batch_res['processed_count']} receipts.")
             st.rerun()

@@ -1,89 +1,75 @@
-# CARBON CRUNCH - Receipt OCR & Financial Information Extraction System
+# Carbon Crunch - Receipt OCR & Financial Information Extraction
 
-An automated, confidence-aware receipt processing system built to extract structured data from semi-structured receipt images, assign multi-factor confidence scores, flag reliability risks, generate financial expense summaries, and provide an interactive web dashboard.
-
----
-
-## Features
-
-- **Computer Vision Preprocessing**: Automatic image deskewing ($\pm 45^\circ$), focus blur estimation via Laplacian variance, Gaussian denoising, and CLAHE contrast enhancement for faint thermal receipts.
-- **Deep Learning OCR & Line Reconstruction**: Integrates EasyOCR with a spatial bounding-box line grouping algorithm that reconstitutes disjointed character tokens into physical reading order.
-- **Key Information Extraction**:
-  - Store / Vendor Name (header spatial heuristics + retail dictionary matching)
-  - Transaction Date (multi-pattern regex engine for ISO and standard date formats)
-  - Line Items & Item Prices (body line scanning & description/price pairing)
-  - Total Amount (priority keyword anchors: `GRAND TOTAL`, `BALANCE DUE`, `TOTAL AMOUNT`, `TOTAL`)
-- **Multi-Factor Confidence Scoring**: Field confidence scores ($0.0 - 1.0$) combining OCR probability ($C_{ocr}$), pattern compliance ($C_{pattern}$), keyword anchor proximity ($C_{heuristic}$), and mathematical item price cross-validation ($\sum \text{items} \approx \text{total}$). Low-confidence fields ($<0.70$) are flagged.
-- **Financial Expense Summary Aggregator**: Compiles total spend across all processed receipts, transaction counts, average spend, and store-by-store breakdown.
-- **Interactive Web Dashboard**: Streamlit interface for side-by-side receipt image visualizer, bounding box overlays, field confidence inspection, and expense analytics charts.
+A python-based system for extracting structured data from semi-structured receipt images. The pipeline performs image preprocessing, deep-learning OCR with spatial line reconstruction, multi-factor confidence scoring, financial expense summary generation, and interactive data visualization.
 
 ---
 
-## Directory Structure
+## Key Capabilities
 
-```
+- Image Preprocessing: Deskewing, Gaussian denoising, contrast enhancement (CLAHE), and focus blur calculation.
+- OCR & Spatial Reconstruction: Text detection and recognition using EasyOCR, followed by vertical line-grouping to preserve physical reading order.
+- Key Information Extraction: Extraction of vendor name, date, individual line items with prices, and grand total.
+- Multi-Factor Confidence Scoring: Combines character OCR probability, format validation, keyword anchor proximity, and item price summation checks.
+- Reliability Handling: Low-confidence fields (< 0.70) are flagged for review.
+- Financial Analytics: Aggregates spend totals, transaction counts, average spend, and store-level spend breakdowns.
+- Web Application: Streamlit UI for visual receipt inspection, bounding box overlays, JSON inspection, and financial reports.
+
+---
+
+## Repository Layout
+
+```text
 carbon-intern/
-├── app.py                  # Streamlit Interactive Web Application
-├── run_batch.py            # Batch processing driver script
-├── DOCUMENTATION.md        # Technical approach & system evaluation report
-├── README.md               # Repository documentation
-├── .gitignore              # Git ignore configuration
+├── app.py                  Streamlit web application
+├── run_batch.py            Batch processing entry script
+├── DOCUMENTATION.md        Technical documentation report
+├── README.md               Project documentation
+├── .gitignore              Git ignore rules
 ├── data/
-│   └── raw_receipts/       # Receipt image dataset (49 images)
+│   └── raw_receipts/       Receipt image dataset
 ├── outputs/
-│   ├── receipts_json/      # Extracted field JSON outputs with confidence scores
-│   ├── expense_summary.json# Aggregated financial expense metrics
-│   └── visualizations/     # Rendered bounding box overlay images
+│   ├── receipts_json/      Structured JSON results with confidence scores
+│   ├── expense_summary.json Aggregated expense metrics
+│   └── visualizations/     Bounding box visualization images
 ├── src/
-│   ├── __init__.py         # Package exports
-│   ├── preprocessing.py    # Image deskewing, denoising, CLAHE contrast
-│   ├── ocr_engine.py       # EasyOCR wrapper & spatial line grouping
-│   ├── extractor.py        # Store, Date, Items, and Total extraction logic
-│   ├── confidence.py       # Multi-factor confidence scorer & reliability flagger
-│   ├── summary.py          # Expense summary aggregator
-│   └── pipeline.py         # End-to-end receipt pipeline driver
+│   ├── __init__.py         Module exports
+│   ├── preprocessing.py    OpenCV preprocessing functions
+│   ├── ocr_engine.py       EasyOCR wrapper and line reconstruction
+│   ├── extractor.py        Extraction rules for vendor, date, items, and total
+│   ├── confidence.py       Field confidence scoring logic
+│   ├── summary.py          Financial summary aggregator
+│   └── pipeline.py         End-to-end receipt pipeline
 └── tests/
-    └── test_pipeline.py    # Pytest unit verification test suite
+    └── test_pipeline.py    Unit tests
 ```
 
 ---
 
-## Installation & Setup
+## Setup & Running
 
-1. **Clone Repository**:
-   ```bash
-   git clone https://github.com/Atharva123-prog/carbon-crunch-atharva.git
-   cd carbon-crunch-atharva
-   ```
+### Requirements
 
-2. **Install Dependencies**:
-   ```bash
-   pip install easyocr opencv-python pillow pandas numpy matplotlib streamlit pytest gdown
-   ```
+```bash
+pip install easyocr opencv-python pillow pandas numpy matplotlib streamlit pytest gdown
+```
 
----
+### 1. Batch Execution
+To process all receipt images and generate structured outputs:
 
-## Usage Guide
-
-### 1. Run Batch Extraction Pipeline
-To process all receipt images and generate JSON outputs + expense summary:
 ```bash
 python run_batch.py
 ```
 
-Outputs will be saved under:
-- `outputs/receipts_json/<receipt_id>.json`
-- `outputs/expense_summary.json`
-- `outputs/visualizations/<receipt_id>_bbox.jpg`
+### 2. Interactive Web Application
+To launch the Streamlit dashboard:
 
-### 2. Launch Streamlit Web Dashboard
-To view receipts, bounding box overlays, field confidence scores, and expense charts interactively:
 ```bash
 streamlit run app.py
 ```
 
-### 3. Run Automated Unit Tests
-To verify all pipeline units:
+### 3. Unit Tests
+To run verification tests:
+
 ```bash
 python -m pytest tests/test_pipeline.py
 ```
@@ -115,7 +101,7 @@ python -m pytest tests/test_pipeline.py
         "price": "2.50"
       }
     ],
-    "confidence": 0.895,
+    "confidence": 0.90,
     "low_confidence": false
   },
   "total_amount": {
