@@ -94,6 +94,7 @@ def test_summary_generator():
     assert summary["financial_summary"]["number_of_transactions"] == 2
     assert summary["financial_summary"]["average_transaction_spend"] == 20.00
     assert summary["financial_summary"]["total_items_purchased"] == 3
-    assert len(summary["financial_summary"]["purchased_items_breakdown"]) == 2
-    assert summary["financial_summary"]["purchased_items_breakdown"][0]["item_name"] == "MILK"
-    assert summary["financial_summary"]["purchased_items_breakdown"][0]["quantity_purchased"] == 2
+    assert len(summary["financial_summary"]["itemized_purchase_register"]) == 3
+    assert summary["financial_summary"]["itemized_purchase_register"][0]["item_name"] == "MILK"
+    assert summary["financial_summary"]["itemized_purchase_register"][0]["store_name"] == "WALMART"
+    assert len(summary["financial_summary"]["store_shopping_summary"]) == 2

@@ -56,6 +56,14 @@ st.markdown("""
         font-size: 11px;
         font-weight: bold;
     }
+    .action-btn-custom {
+        background-color: #0f172a;
+        color: #ffffff;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 600;
+    }
     .footer-container {
         border-top: 1px solid #e2e8f0;
         padding: 16px 0;
@@ -70,7 +78,7 @@ st.markdown("""
 st.markdown("""
 <div class="header-container">
     <div class="header-title">CARBON CRUNCH</div>
-    <div class="header-subtitle">Receipt OCR Information Extraction & Financial Intelligence Platform</div>
+    <div class="header-subtitle">Receipt OCR Information Extraction & Financial Analytics Platform</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -85,7 +93,7 @@ output_dir = "outputs"
 json_dir = os.path.join(output_dir, "receipts_json")
 summary_file = os.path.join(output_dir, "expense_summary.json")
 
-tab1, tab2, tab3 = st.tabs(["Single Receipt Extractor", "Financial Summary & Items Breakdown", "Batch Processing"])
+tab1, tab2, tab3 = st.tabs(["Single Receipt Extractor", "Expense Summary", "Batch Processing"])
 
 with tab1:
     st.header("Extract Receipt Information")
@@ -131,7 +139,7 @@ with tab1:
 
                 store_conf = conf_data["store_name"]["confidence"]
                 store_badge = '<span class="status-badge-green">HIGH</span>' if store_conf >= 0.7 else '<span class="status-badge-red">LOW</span>'
-                st.markdown(f"**Store Name**: `{conf_data['store_name']['value']}` {store_badge} (Conf: `{store_conf}`)", unsafe_allow_html=True)
+                st.markdown(f"**Store / Vendor Name**: `{conf_data['store_name']['value']}` {store_badge} (Conf: `{store_conf}`)", unsafe_allow_html=True)
 
                 date_conf = conf_data["date"]["confidence"]
                 date_badge = '<span class="status-badge-green">HIGH</span>' if date_conf >= 0.7 else '<span class="status-badge-red">LOW</span>'
@@ -142,7 +150,7 @@ with tab1:
                 st.markdown(f"**Total Amount**: `${conf_data['total_amount']['value']}` {tot_badge} (Conf: `{tot_conf}`)", unsafe_allow_html=True)
 
                 items = conf_data["items"]["value"]
-                st.markdown(f"**Line Items ({len(items)})**:")
+                st.markdown(f"**Line Items Purchased ({len(items)})**:")
                 if items:
                     st.dataframe(pd.DataFrame(items), use_container_width=True)
                 else:
@@ -152,56 +160,76 @@ with tab1:
                 st.json(conf_data)
 
 with tab2:
-    st.header("Financial Expense Summary & Purchase Analytics")
+    st.header("Expense Summary")
     if os.path.exists(summary_file):
         with open(summary_file, "r", encoding="utf-8") as f:
-            summary_data = json.load(f)
+            summary_raw_str = f.read()
+            summary_data = json.loads(summary_raw_str)
 
         fin = summary_data.get("financial_summary", {})
         rel = summary_data.get("reliability_summary", {})
 
+        c_metrics, c_download = st.columns([4, 1])
+        with c_download:
+            st.download_button(
+                label="Download Summary JSON",
+                data=summary_raw_str,
+                file_name="expense_summary.json",
+                mime="application/json"
+            )
+
         m1, m2, m3, m4, m5 = st.columns(5)
         m1.metric("Total Spend", f"${fin.get('total_spend', 0.0):,.2f}")
-        m2.metric("Transactions", fin.get("number_of_transactions", 0))
+        m2.metric("Total Transactions", fin.get("number_of_transactions", 0))
         m3.metric("Items Purchased", fin.get("total_items_purchased", 0))
         m4.metric("Avg Transaction", f"${fin.get('average_transaction_spend', 0.0):,.2f}")
         m5.metric("Reliability Rate", f"{rel.get('reliability_percentage', 0.0)}%")
 
         st.divider()
-        st.subheader("Purchased Items Breakdown")
-        st.write("Itemized summary of purchased items, quantities, and total expenditure across all receipts:")
+        st.subheader("Purchased Items & Bill Register")
+        st.write("Detailed register of every item purchased, item number, individual price, vendor/store name, and receipt date:")
 
-        items_breakdown = fin.get("purchased_items_breakdown", [])
-        if items_breakdown:
-            df_items = pd.DataFrame(items_breakdown)
-            df_items.columns = ["Item Description", "Quantity Purchased", "Total Spent ($)", "Avg Unit Price ($)"]
+        item_register = fin.get("itemized_purchase_register", [])
+        if item_register:
+            df_items = pd.DataFrame(item_register)
+            df_items.rename(columns={
+                "item_no": "Item No",
+                "item_name": "Item Name Purchased",
+                "price": "Price ($)",
+                "store_name": "Store / Vendor Name",
+                "date": "Transaction Date",
+                "receipt_id": "Receipt ID"
+            }, inplace=True)
 
-            col_item_table, col_item_chart = st.columns([3, 2])
-            with col_item_table:
-                st.dataframe(df_items, use_container_width=True)
-            with col_item_chart:
-                st.write("**Top Purchased Items by Total Spend ($)**")
-                df_top_items = df_items.head(10)
-                st.bar_chart(data=df_top_items, x="Item Description", y="Total Spent ($)")
+            stores_list = ["ALL VENDORS"] + sorted(list(set(df_items["Store / Vendor Name"].astype(str))))
+            selected_store_filter = st.selectbox("Filter Items by Store / Vendor:", stores_list)
+
+            if selected_store_filter != "ALL VENDORS":
+                df_filtered_items = df_items[df_items["Store / Vendor Name"] == selected_store_filter]
+            else:
+                df_filtered_items = df_items
+
+            st.dataframe(df_filtered_items, use_container_width=True)
         else:
-            st.info("No line items extracted from processed receipts.")
+            st.info("No itemized purchase records available.")
 
         st.divider()
-        st.subheader("Spend by Vendor / Store")
-        store_data = fin.get("spend_per_store", {})
-        if store_data:
-            df_store = pd.DataFrame.from_dict(store_data, orient="index").reset_index()
+        st.subheader("Total Shopping Done by Store / Vendor")
+        store_summary_list = fin.get("store_shopping_summary", [])
+        if store_summary_list:
+            df_store = pd.DataFrame(store_summary_list)
             df_store.rename(columns={
-                "index": "Vendor Name",
-                "total_spend": "Total Spend ($)",
+                "store_name": "Store / Vendor Name",
+                "total_shopping_amount": "Total Shopping Amount ($)",
+                "items_purchased_count": "Items Purchased",
                 "transaction_count": "Transactions",
-                "average_spend": "Avg Spend ($)",
-                "percentage_of_total": "Share (%)"
+                "average_item_price": "Avg Item Price ($)",
+                "percentage_of_total": "Shopping Share (%)"
             }, inplace=True)
 
             c_chart, c_table = st.columns([1, 1])
             with c_chart:
-                st.bar_chart(data=df_store, x="Vendor Name", y="Total Spend ($)")
+                st.bar_chart(data=df_store, x="Store / Vendor Name", y="Total Shopping Amount ($)")
             with c_table:
                 st.dataframe(df_store, use_container_width=True)
 
@@ -210,6 +238,14 @@ with tab2:
         tx_list = summary_data.get("all_transactions", [])
         if tx_list:
             df_tx = pd.DataFrame(tx_list)
+            df_tx.rename(columns={
+                "receipt_id": "Receipt ID",
+                "store_name": "Store / Vendor Name",
+                "date": "Date",
+                "items_count": "Items Count",
+                "total_amount": "Total Amount ($)",
+                "is_reliable": "Is Reliable"
+            }, inplace=True)
             st.dataframe(df_tx, use_container_width=True)
     else:
         st.warning("No summary available. Run batch processing first.")
@@ -217,7 +253,7 @@ with tab2:
 with tab3:
     st.header("Batch Process Receipts")
     st.write(f"Process all receipt images in `{raw_dir}`.")
-    if st.button("Start Batch Execution", type="primary"):
+    if st.button("Start Batch Processing", type="primary"):
         with st.spinner("Processing dataset..."):
             batch_res = pipeline.process_directory(raw_dir, output_dir)
             st.success(f"Finished processing {batch_res['processed_count']} receipts.")

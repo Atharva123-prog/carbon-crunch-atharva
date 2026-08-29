@@ -12,776 +12,1032 @@
       "total_amount": 45679.83,
       "is_reliable": false
     },
-    "spend_per_store": {
-      "WALMART": {
-        "total_spend": 45961.44,
+    "store_shopping_summary": [
+      {
+        "store_name": "WALMART",
+        "total_shopping_amount": 45961.44,
+        "items_purchased_count": 20,
         "transaction_count": 12,
-        "average_spend": 3830.12,
+        "average_item_price": 2298.07,
         "percentage_of_total": 94.14
       },
-      "joiOES GOlEI Cfzsll": {
-        "total_spend": 438.68,
-        "transaction_count": 1,
-        "average_spend": 438.68,
-        "percentage_of_total": 0.9
-      },
-      "SpADQ": {
-        "total_spend": 210.68,
-        "transaction_count": 1,
-        "average_spend": 210.68,
-        "percentage_of_total": 0.43
-      },
-      "WHZLE": {
-        "total_spend": 45.44,
-        "transaction_count": 1,
-        "average_spend": 45.44,
-        "percentage_of_total": 0.09
-      },
-      "WAL MART": {
-        "total_spend": 0.0,
-        "transaction_count": 1,
-        "average_spend": 0.0,
-        "percentage_of_total": 0.0
-      },
-      "DOLLAR TREE": {
-        "total_spend": 0.0,
-        "transaction_count": 1,
-        "average_spend": 0.0,
-        "percentage_of_total": 0.0
-      },
-      "Dollar Tnee Stores Inc.": {
-        "total_spend": 510.21,
-        "transaction_count": 1,
-        "average_spend": 510.21,
-        "percentage_of_total": 1.05
-      },
-      "WHOLE FOODS": {
-        "total_spend": 0.0,
-        "transaction_count": 1,
-        "average_spend": 0.0,
-        "percentage_of_total": 0.0
-      },
-      "53 Jnd": {
-        "total_spend": 175.0,
-        "transaction_count": 1,
-        "average_spend": 175.0,
-        "percentage_of_total": 0.36
-      },
-      "coxc": {
-        "total_spend": 85.61,
-        "transaction_count": 1,
-        "average_spend": 85.61,
-        "percentage_of_total": 0.18
-      },
-      "winco": {
-        "total_spend": 121.52,
-        "transaction_count": 1,
-        "average_spend": 121.52,
-        "percentage_of_total": 0.25
-      },
-      "tan woon yann": {
-        "total_spend": 69.31,
-        "transaction_count": 4,
-        "average_spend": 17.33,
-        "percentage_of_total": 0.14
-      },
-      "TESCO": {
-        "total_spend": 50.0,
-        "transaction_count": 1,
-        "average_spend": 50.0,
-        "percentage_of_total": 0.1
-      },
-      "tan chay yee": {
-        "total_spend": 780.0,
+      {
+        "store_name": "tan chay yee",
+        "total_shopping_amount": 780.0,
+        "items_purchased_count": 7,
         "transaction_count": 5,
-        "average_spend": 156.0,
+        "average_item_price": 111.43,
         "percentage_of_total": 1.6
       },
-      "13": {
-        "total_spend": 0.0,
+      {
+        "store_name": "Dollar Tnee Stores Inc.",
+        "total_shopping_amount": 510.21,
+        "items_purchased_count": 4,
         "transaction_count": 1,
-        "average_spend": 0.0,
-        "percentage_of_total": 0.0
+        "average_item_price": 127.55,
+        "percentage_of_total": 1.05
       },
-      "6xy": {
-        "total_spend": 0.0,
+      {
+        "store_name": "joiOES GOlEI Cfzsll",
+        "total_shopping_amount": 438.68,
+        "items_purchased_count": 5,
         "transaction_count": 1,
-        "average_spend": 0.0,
-        "percentage_of_total": 0.0
+        "average_item_price": 87.74,
+        "percentage_of_total": 0.9
       },
-      "Ix MVOICE V0  19729058": {
-        "total_spend": 4.9,
+      {
+        "store_name": "SpADQ",
+        "total_shopping_amount": 210.68,
+        "items_purchased_count": 7,
         "transaction_count": 1,
-        "average_spend": 4.9,
-        "percentage_of_total": 0.01
+        "average_item_price": 30.1,
+        "percentage_of_total": 0.43
       },
-      "Qpser.": {
-        "total_spend": 12.5,
+      {
+        "store_name": "53 Jnd",
+        "total_shopping_amount": 175.0,
+        "items_purchased_count": 0,
         "transaction_count": 1,
-        "average_spend": 12.5,
-        "percentage_of_total": 0.03
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.36
       },
-      "Jce": {
-        "total_spend": 70.6,
+      {
+        "store_name": "93 Eoze0 Nant Sv8 515537-K",
+        "total_shopping_amount": 160.17,
+        "items_purchased_count": 4,
         "transaction_count": 1,
-        "average_spend": 70.6,
-        "percentage_of_total": 0.14
-      },
-      "patue": {
-        "total_spend": 0.0,
-        "transaction_count": 1,
-        "average_spend": 0.0,
-        "percentage_of_total": 0.0
-      },
-      "BANDAR UTAMA BATANG KAi": {
-        "total_spend": 6.36,
-        "transaction_count": 1,
-        "average_spend": 6.36,
-        "percentage_of_total": 0.01
-      },
-      "Oy RM": {
-        "total_spend": 10.33,
-        "transaction_count": 1,
-        "average_spend": 10.33,
-        "percentage_of_total": 0.02
-      },
-      "Sekysen 8 Bandar Utama 44300": {
-        "total_spend": 8.0,
-        "transaction_count": 1,
-        "average_spend": 8.0,
-        "percentage_of_total": 0.02
-      },
-      "H E0g WnicoRN IUIN ISUFER Glue Usg-99 -": {
-        "total_spend": 20.0,
-        "transaction_count": 1,
-        "average_spend": 20.0,
-        "percentage_of_total": 0.04
-      },
-      "exeala 50": {
-        "total_spend": 8.88,
-        "transaction_count": 1,
-        "average_spend": 8.88,
-        "percentage_of_total": 0.02
-      },
-      "Home MaSTeR Hardwiare &": {
-        "total_spend": 50.0,
-        "transaction_count": 1,
-        "average_spend": 50.0,
-        "percentage_of_total": 0.1
-      },
-      "aant Bhzi 01.57.01": {
-        "total_spend": 0.0,
-        "transaction_count": 1,
-        "average_spend": 0.0,
-        "percentage_of_total": 0.0
-      },
-      "RESTORAN  HASSANBISTRO": {
-        "total_spend": 0.0,
-        "transaction_count": 1,
-        "average_spend": 0.0,
-        "percentage_of_total": 0.0
-      },
-      "93 Eoze0 Nant Sv8 515537-K": {
-        "total_spend": 160.17,
-        "transaction_count": 1,
-        "average_spend": 160.17,
+        "average_item_price": 40.04,
         "percentage_of_total": 0.33
       },
-      "Asulart": {
-        "total_spend": 0.07,
+      {
+        "store_name": "winco",
+        "total_shopping_amount": 121.52,
+        "items_purchased_count": 0,
         "transaction_count": 1,
-        "average_spend": 0.07,
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.25
+      },
+      {
+        "store_name": "coxc",
+        "total_shopping_amount": 85.61,
+        "items_purchased_count": 11,
+        "transaction_count": 1,
+        "average_item_price": 7.78,
+        "percentage_of_total": 0.18
+      },
+      {
+        "store_name": "Jce",
+        "total_shopping_amount": 70.6,
+        "items_purchased_count": 2,
+        "transaction_count": 1,
+        "average_item_price": 35.3,
+        "percentage_of_total": 0.14
+      },
+      {
+        "store_name": "tan woon yann",
+        "total_shopping_amount": 69.31,
+        "items_purchased_count": 1,
+        "transaction_count": 4,
+        "average_item_price": 69.31,
+        "percentage_of_total": 0.14
+      },
+      {
+        "store_name": "TESCO",
+        "total_shopping_amount": 50.0,
+        "items_purchased_count": 4,
+        "transaction_count": 1,
+        "average_item_price": 12.5,
+        "percentage_of_total": 0.1
+      },
+      {
+        "store_name": "Home MaSTeR Hardwiare &",
+        "total_shopping_amount": 50.0,
+        "items_purchased_count": 6,
+        "transaction_count": 1,
+        "average_item_price": 8.33,
+        "percentage_of_total": 0.1
+      },
+      {
+        "store_name": "WHZLE",
+        "total_shopping_amount": 45.44,
+        "items_purchased_count": 5,
+        "transaction_count": 1,
+        "average_item_price": 9.09,
+        "percentage_of_total": 0.09
+      },
+      {
+        "store_name": "CORPORATION S8",
+        "total_shopping_amount": 23.05,
+        "items_purchased_count": 2,
+        "transaction_count": 1,
+        "average_item_price": 11.53,
+        "percentage_of_total": 0.05
+      },
+      {
+        "store_name": "H E0g WnicoRN IUIN ISUFER Glue Usg-99 -",
+        "total_shopping_amount": 20.0,
+        "items_purchased_count": 2,
+        "transaction_count": 1,
+        "average_item_price": 10.0,
+        "percentage_of_total": 0.04
+      },
+      {
+        "store_name": "Qpser.",
+        "total_shopping_amount": 12.5,
+        "items_purchased_count": 2,
+        "transaction_count": 1,
+        "average_item_price": 6.25,
+        "percentage_of_total": 0.03
+      },
+      {
+        "store_name": "Oy RM",
+        "total_shopping_amount": 10.33,
+        "items_purchased_count": 1,
+        "transaction_count": 1,
+        "average_item_price": 10.33,
+        "percentage_of_total": 0.02
+      },
+      {
+        "store_name": "exeala 50",
+        "total_shopping_amount": 8.88,
+        "items_purchased_count": 1,
+        "transaction_count": 1,
+        "average_item_price": 8.88,
+        "percentage_of_total": 0.02
+      },
+      {
+        "store_name": "Sekysen 8 Bandar Utama 44300",
+        "total_shopping_amount": 8.0,
+        "items_purchased_count": 2,
+        "transaction_count": 1,
+        "average_item_price": 4.0,
+        "percentage_of_total": 0.02
+      },
+      {
+        "store_name": "BANDAR UTAMA BATANG KAi",
+        "total_shopping_amount": 6.36,
+        "items_purchased_count": 1,
+        "transaction_count": 1,
+        "average_item_price": 6.36,
+        "percentage_of_total": 0.01
+      },
+      {
+        "store_name": "Ix MVOICE V0  19729058",
+        "total_shopping_amount": 4.9,
+        "items_purchased_count": 4,
+        "transaction_count": 1,
+        "average_item_price": 1.23,
+        "percentage_of_total": 0.01
+      },
+      {
+        "store_name": "Asulart",
+        "total_shopping_amount": 0.07,
+        "items_purchased_count": 1,
+        "transaction_count": 1,
+        "average_item_price": 0.07,
         "percentage_of_total": 0.0
       },
-      "CORPORATION S8": {
-        "total_spend": 23.05,
+      {
+        "store_name": "WAL MART",
+        "total_shopping_amount": 0.0,
+        "items_purchased_count": 0,
         "transaction_count": 1,
-        "average_spend": 23.05,
-        "percentage_of_total": 0.05
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.0
+      },
+      {
+        "store_name": "DOLLAR TREE",
+        "total_shopping_amount": 0.0,
+        "items_purchased_count": 0,
+        "transaction_count": 1,
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.0
+      },
+      {
+        "store_name": "WHOLE FOODS",
+        "total_shopping_amount": 0.0,
+        "items_purchased_count": 0,
+        "transaction_count": 1,
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.0
+      },
+      {
+        "store_name": "13",
+        "total_shopping_amount": 0.0,
+        "items_purchased_count": 0,
+        "transaction_count": 1,
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.0
+      },
+      {
+        "store_name": "6xy",
+        "total_shopping_amount": 0.0,
+        "items_purchased_count": 0,
+        "transaction_count": 1,
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.0
+      },
+      {
+        "store_name": "patue",
+        "total_shopping_amount": 0.0,
+        "items_purchased_count": 0,
+        "transaction_count": 1,
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.0
+      },
+      {
+        "store_name": "aant Bhzi 01.57.01",
+        "total_shopping_amount": 0.0,
+        "items_purchased_count": 1,
+        "transaction_count": 1,
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.0
+      },
+      {
+        "store_name": "RESTORAN  HASSANBISTRO",
+        "total_shopping_amount": 0.0,
+        "items_purchased_count": 4,
+        "transaction_count": 1,
+        "average_item_price": 0.0,
+        "percentage_of_total": 0.0
       }
-    },
-    "purchased_items_breakdown": [
+    ],
+    "itemized_purchase_register": [
       {
-        "item_name": "TOT",
-        "quantity_purchased": 1,
-        "total_spent": 438.68,
-        "average_unit_price": 438.68
-      },
-      {
-        "item_name": "JOU 00J",
-        "quantity_purchased": 1,
-        "total_spent": 327.0,
-        "average_unit_price": 327.0
-      },
-      {
-        "item_name": "CIG BEEI",
-        "quantity_purchased": 1,
-        "total_spent": 310.0,
-        "average_unit_price": 310.0
-      },
-      {
-        "item_name": "COCOOOI1 SR",
-        "quantity_purchased": 1,
-        "total_spent": 193.0,
-        "average_unit_price": 193.0
-      },
-      {
-        "item_name": "A81",
-        "quantity_purchased": 1,
-        "total_spent": 160.17,
-        "average_unit_price": 160.17
-      },
-      {
-        "item_name": "SUBTOIAL",
-        "quantity_purchased": 1,
-        "total_spent": 85.61,
-        "average_unit_price": 85.61
-      },
-      {
-        "item_name": "G30UL D8",
-        "quantity_purchased": 1,
-        "total_spent": 80.0,
-        "average_unit_price": 80.0
-      },
-      {
-        "item_name": "CMI CM4I UBITLI3J",
-        "quantity_purchased": 1,
-        "total_spent": 50.0,
-        "average_unit_price": 50.0
-      },
-      {
-        "item_name": "PARMENT -",
-        "quantity_purchased": 1,
-        "total_spent": 50.0,
-        "average_unit_price": 50.0
-      },
-      {
-        "item_name": "TOIA",
-        "quantity_purchased": 1,
-        "total_spent": 49.9,
-        "average_unit_price": 49.9
-      },
-      {
-        "item_name": "TOIALPUROMSE",
-        "quantity_purchased": 1,
-        "total_spent": 49.9,
-        "average_unit_price": 49.9
-      },
-      {
-        "item_name": "SUBIOIAL",
-        "quantity_purchased": 1,
-        "total_spent": 46.44,
-        "average_unit_price": 46.44
-      },
-      {
-        "item_name": "CRILL COMR 4178944021",
-        "quantity_purchased": 1,
-        "total_spent": 44.97,
-        "average_unit_price": 44.97
-      },
-      {
-        "item_name": ".J . JALEN 552140 PETALING JARA",
-        "quantity_purchased": 1,
-        "total_spent": 39.47,
-        "average_unit_price": 39.47
-      },
-      {
-        "item_name": "SIBIOIAL",
-        "quantity_purchased": 1,
-        "total_spent": 38.68,
-        "average_unit_price": 38.68
-      },
-      {
-        "item_name": "STOPCAPD REDIPHIO",
-        "quantity_purchased": 1,
-        "total_spent": 35.05,
-        "average_unit_price": 35.05
-      },
-      {
-        "item_name": "TOMAL RM",
-        "quantity_purchased": 1,
-        "total_spent": 33.92,
-        "average_unit_price": 33.92
-      },
-      {
-        "item_name": "IOTAL ROUNDED 33.F0 RH",
-        "quantity_purchased": 1,
-        "total_spent": 33.9,
-        "average_unit_price": 33.9
-      },
-      {
-        "item_name": "PLUSTLC",
-        "quantity_purchased": 1,
-        "total_spent": 31.0,
-        "average_unit_price": 31.0
-      },
-      {
-        "item_name": "TOLAL AMOUNT",
-        "quantity_purchased": 1,
-        "total_spent": 31.0,
-        "average_unit_price": 31.0
-      },
-      {
-        "item_name": "CAG RA",
-        "quantity_purchased": 1,
-        "total_spent": 30.2,
-        "average_unit_price": 30.2
-      },
-      {
-        "item_name": "NESTUE AE0 0",
-        "quantity_purchased": 1,
-        "total_spent": 24.99,
-        "average_unit_price": 24.99
-      },
-      {
-        "item_name": "AIILEIICS 0191045677781",
-        "quantity_purchased": 1,
-        "total_spent": 24.91,
-        "average_unit_price": 24.91
-      },
-      {
-        "item_name": "X KE-BER 1826278335",
-        "quantity_purchased": 1,
-        "total_spent": 23.99,
-        "average_unit_price": 23.99
-      },
-      {
-        "item_name": ". ID 1459",
-        "quantity_purchased": 1,
-        "total_spent": 23.05,
-        "average_unit_price": 23.05
-      },
-      {
-        "item_name": ".18 1527",
-        "quantity_purchased": 1,
-        "total_spent": 23.03,
-        "average_unit_price": 23.03
-      },
-      {
-        "item_name": "VASTIC RICE JOU 2N0 0.5",
-        "quantity_purchased": 1,
-        "total_spent": 21.93,
-        "average_unit_price": 21.93
-      },
-      {
-        "item_name": "REG 019- 1801Z018 I0",
-        "quantity_purchased": 1,
-        "total_spent": 21.02,
-        "average_unit_price": 21.02
-      },
-      {
-        "item_name": "GRHD IURKEY",
-        "quantity_purchased": 1,
-        "total_spent": 18.47,
-        "average_unit_price": 18.47
-      },
-      {
-        "item_name": "DAIE 4228201 IQ PW",
-        "quantity_purchased": 1,
-        "total_spent": 17.32,
-        "average_unit_price": 17.32
-      },
-      {
-        "item_name": "LOI MOSTCR SALE WEA QA",
-        "quantity_purchased": 1,
-        "total_spent": 16.93,
-        "average_unit_price": 16.93
-      },
-      {
-        "item_name": "I.16",
-        "quantity_purchased": 1,
-        "total_spent": 15.93,
-        "average_unit_price": 15.93
-      },
-      {
-        "item_name": "SR",
-        "quantity_purchased": 1,
-        "total_spent": 15.9,
-        "average_unit_price": 15.9
-      },
-      {
-        "item_name": "SUBTOTAI",
-        "quantity_purchased": 1,
-        "total_spent": 15.9,
-        "average_unit_price": 15.9
-      },
-      {
-        "item_name": "TOLD AML ROUNDED",
-        "quantity_purchased": 1,
-        "total_spent": 15.9,
-        "average_unit_price": 15.9
-      },
-      {
-        "item_name": ". ZR",
-        "quantity_purchased": 1,
-        "total_spent": 15.0,
-        "average_unit_price": 15.0
-      },
-      {
-        "item_name": "ST 68",
-        "quantity_purchased": 1,
-        "total_spent": 15.0,
-        "average_unit_price": 15.0
-      },
-      {
-        "item_name": "ROUNDING",
-        "quantity_purchased": 1,
-        "total_spent": 15.0,
-        "average_unit_price": 15.0
-      },
-      {
-        "item_name": "DEXAS 1570 008429710921",
-        "quantity_purchased": 1,
-        "total_spent": 12.97,
-        "average_unit_price": 12.97
-      },
-      {
-        "item_name": "I8CT EGGS",
-        "quantity_purchased": 1,
-        "total_spent": 12.87,
-        "average_unit_price": 12.87
-      },
-      {
-        "item_name": "GRILALCA1",
-        "quantity_purchased": 1,
-        "total_spent": 12.5,
-        "average_unit_price": 12.5
-      },
-      {
-        "item_name": "1820.42",
-        "quantity_purchased": 1,
-        "total_spent": 11.3,
-        "average_unit_price": 11.3
-      },
-      {
-        "item_name": "RAVIERIES F OROUSIZ G4 A WMUBLLD",
-        "quantity_purchased": 1,
-        "total_spent": 10.91,
-        "average_unit_price": 10.91
-      },
-      {
-        "item_name": "DISCT 359",
-        "quantity_purchased": 1,
-        "total_spent": 10.0,
-        "average_unit_price": 10.0
-      },
-      {
-        "item_name": "CHECK MERBER PRNTD",
-        "quantity_purchased": 1,
-        "total_spent": 9.13,
-        "average_unit_price": 9.13
-      },
-      {
-        "item_name": "1X 5",
-        "quantity_purchased": 1,
-        "total_spent": 8.9,
-        "average_unit_price": 8.9
-      },
-      {
-        "item_name": "E8XNCE",
-        "quantity_purchased": 1,
-        "total_spent": 8.88,
-        "average_unit_price": 8.88
-      },
-      {
-        "item_name": "ALIP M CSUER 6 16 17",
-        "quantity_purchased": 1,
-        "total_spent": 8.21,
-        "average_unit_price": 8.21
-      },
-      {
-        "item_name": "ZOX30 IKG",
-        "quantity_purchased": 1,
-        "total_spent": 8.0,
-        "average_unit_price": 8.0
-      },
-      {
-        "item_name": "ROUNFING 30 1S",
-        "quantity_purchased": 1,
-        "total_spent": 7.8,
-        "average_unit_price": 7.8
-      },
-      {
-        "item_name": "TEL07-380 2218 FAX.8 0210",
-        "quantity_purchased": 1,
-        "total_spent": 7.38,
-        "average_unit_price": 7.38
-      },
-      {
-        "item_name": "TE 07-308 2218 FAA.8 0216",
-        "quantity_purchased": 1,
-        "total_spent": 7.3,
-        "average_unit_price": 7.3
-      },
-      {
-        "item_name": "O12002 IA 081236803115",
-        "quantity_purchased": 1,
-        "total_spent": 6.74,
-        "average_unit_price": 6.74
-      },
-      {
-        "item_name": "FFBS BREAST",
-        "quantity_purchased": 1,
-        "total_spent": 6.49,
-        "average_unit_price": 6.49
-      },
-      {
-        "item_name": "ECO HALE PAN",
-        "quantity_purchased": 1,
-        "total_spent": 6.49,
-        "average_unit_price": 6.49
-      },
-      {
-        "item_name": "77053 GRIPE TOKATO",
-        "quantity_purchased": 1,
-        "total_spent": 6.29,
-        "average_unit_price": 6.29
-      },
-      {
-        "item_name": "DISNY 0511 VICA 420 2N",
-        "quantity_purchased": 1,
-        "total_spent": 5.69,
-        "average_unit_price": 5.69
-      },
-      {
-        "item_name": "FRAP 001200010451 F",
-        "quantity_purchased": 1,
-        "total_spent": 5.48,
-        "average_unit_price": 5.48
-      },
-      {
-        "item_name": "DALE 15012019 1. AM",
-        "quantity_purchased": 1,
-        "total_spent": 5.16,
-        "average_unit_price": 5.16
-      },
-      {
-        "item_name": "PEALED NTS",
-        "quantity_purchased": 1,
-        "total_spent": 4.99,
-        "average_unit_price": 4.99
-      },
-      {
-        "item_name": "MHP SLICED OVEM RO",
-        "quantity_purchased": 1,
-        "total_spent": 3.99,
-        "average_unit_price": 3.99
-      },
-      {
-        "item_name": "NHP SLICED HICKORY",
-        "quantity_purchased": 1,
-        "total_spent": 3.99,
-        "average_unit_price": 3.99
-      },
-      {
-        "item_name": "18350846 3. 88",
-        "quantity_purchased": 1,
-        "total_spent": 3.88,
-        "average_unit_price": 3.88
-      },
-      {
-        "item_name": "IB 1 6 I1DD",
-        "quantity_purchased": 1,
-        "total_spent": 3.64,
-        "average_unit_price": 3.64
-      },
-      {
-        "item_name": "OPD ONION",
-        "quantity_purchased": 1,
-        "total_spent": 3.59,
-        "average_unit_price": 3.59
-      },
-      {
-        "item_name": "C IM 10",
-        "quantity_purchased": 1,
-        "total_spent": 3.46,
-        "average_unit_price": 3.46
-      },
-      {
-        "item_name": "CANGE DUE",
-        "quantity_purchased": 1,
-        "total_spent": 3.1,
-        "average_unit_price": 3.1
-      },
-      {
-        "item_name": "CBLE IN TE",
-        "quantity_purchased": 1,
-        "total_spent": 3.0,
-        "average_unit_price": 3.0
-      },
-      {
-        "item_name": "KS DICED TO4",
-        "quantity_purchased": 1,
-        "total_spent": 2.97,
-        "average_unit_price": 2.97
-      },
-      {
-        "item_name": "QANN NNI FAN OLALDIED WHIPINA",
-        "quantity_purchased": 1,
-        "total_spent": 2.91,
-        "average_unit_price": 2.91
-      },
-      {
-        "item_name": "IQIAL LOWS 61 651",
-        "quantity_purchased": 1,
-        "total_spent": 2.7,
-        "average_unit_price": 2.7
-      },
-      {
-        "item_name": "ORCANIC OLD FASHIUNED",
-        "quantity_purchased": 1,
-        "total_spent": 2.69,
-        "average_unit_price": 2.69
-      },
-      {
-        "item_name": "CALIFORNLE HARVEST",
-        "quantity_purchased": 1,
-        "total_spent": 2.69,
-        "average_unit_price": 2.69
-      },
-      {
-        "item_name": "CLERL IEARI 0U18 I1 F",
-        "quantity_purchased": 1,
-        "total_spent": 2.48,
-        "average_unit_price": 2.48
-      },
-      {
-        "item_name": "T PLUHS BLACK CV",
-        "quantity_purchased": 1,
-        "total_spent": 2.15,
-        "average_unit_price": 2.15
-      },
-      {
-        "item_name": "VC 42 OFF  VC FII",
-        "quantity_purchased": 1,
-        "total_spent": 2.0,
-        "average_unit_price": 2.0
-      },
-      {
-        "item_name": "SAND-ICH VENIII",
-        "quantity_purchased": 1,
-        "total_spent": 1.9,
-        "average_unit_price": 1.9
-      },
-      {
-        "item_name": "OAILEAL 007874243408 0",
-        "quantity_purchased": 1,
-        "total_spent": 1.76,
-        "average_unit_price": 1.76
-      },
-      {
-        "item_name": "AANT BHZI.01",
-        "quantity_purchased": 1,
-        "total_spent": 1.57,
-        "average_unit_price": 1.57
-      },
-      {
-        "item_name": "6652 6669 B05",
-        "quantity_purchased": 1,
-        "total_spent": 1.17,
-        "average_unit_price": 1.17
-      },
-      {
-        "item_name": "01A969 FO M TUS",
-        "quantity_purchased": 1,
-        "total_spent": 1.16,
-        "average_unit_price": 1.16
-      },
-      {
-        "item_name": "MHERE EVERVTHIM S",
-        "quantity_purchased": 1,
-        "total_spent": 1.0,
-        "average_unit_price": 1.0
-      },
-      {
-        "item_name": "G0",
-        "quantity_purchased": 1,
-        "total_spent": 0.9,
-        "average_unit_price": 0.9
-      },
-      {
-        "item_name": "BANMS ORUANIC",
-        "quantity_purchased": 1,
-        "total_spent": 0.87,
-        "average_unit_price": 0.87
-      },
-      {
-        "item_name": "S1 RA",
-        "quantity_purchased": 1,
-        "total_spent": 0.8,
-        "average_unit_price": 0.8
-      },
-      {
-        "item_name": "EA DEUT",
-        "quantity_purchased": 1,
-        "total_spent": 0.79,
-        "average_unit_price": 0.79
-      },
-      {
-        "item_name": "J T",
-        "quantity_purchased": 1,
-        "total_spent": 0.62,
-        "average_unit_price": 0.62
-      },
-      {
-        "item_name": "A7 IAX",
-        "quantity_purchased": 1,
-        "total_spent": 0.55,
-        "average_unit_price": 0.55
-      },
-      {
-        "item_name": "SROA",
-        "quantity_purchased": 1,
-        "total_spent": 0.45,
-        "average_unit_price": 0.45
-      },
-      {
-        "item_name": "INDUDED MU TETEL",
-        "quantity_purchased": 1,
-        "total_spent": 0.45,
-        "average_unit_price": 0.45
-      },
-      {
-        "item_name": "SROA1",
-        "quantity_purchased": 1,
-        "total_spent": 0.36,
-        "average_unit_price": 0.36
-      },
-      {
-        "item_name": ". 00R 4462",
-        "quantity_purchased": 1,
-        "total_spent": 0.28,
-        "average_unit_price": 0.28
-      },
-      {
-        "item_name": "SALES IA",
-        "quantity_purchased": 1,
-        "total_spent": 0.21,
-        "average_unit_price": 0.21
-      },
-      {
+        "item_no": 1,
         "item_name": "BTTTSIB TIBODIKE",
-        "quantity_purchased": 1,
-        "total_spent": 0.2,
-        "average_unit_price": 0.2
+        "price": 0.2,
+        "store_name": "WALMART",
+        "date": "UNKNOWN",
+        "receipt_id": "0"
       },
       {
-        "item_name": "CHANVE",
-        "quantity_purchased": 1,
-        "total_spent": 0.1,
-        "average_unit_price": 0.1
+        "item_no": 2,
+        "item_name": "FRAP 001200010451 F",
+        "price": 5.48,
+        "store_name": "WALMART",
+        "date": "UNKNOWN",
+        "receipt_id": "0"
       },
       {
-        "item_name": "DOARO CS0IB 00000",
-        "quantity_purchased": 1,
-        "total_spent": 0.07,
-        "average_unit_price": 0.07
+        "item_no": 3,
+        "item_name": "ORCANIC OLD FASHIUNED",
+        "price": 2.69,
+        "store_name": "joiOES GOlEI Cfzsll",
+        "date": "UNKNOWN",
+        "receipt_id": "1"
       },
       {
+        "item_no": 4,
+        "item_name": "BANMS ORUANIC",
+        "price": 0.87,
+        "store_name": "joiOES GOlEI Cfzsll",
+        "date": "UNKNOWN",
+        "receipt_id": "1"
+      },
+      {
+        "item_no": 5,
+        "item_name": "EA DEUT",
+        "price": 0.79,
+        "store_name": "joiOES GOlEI Cfzsll",
+        "date": "UNKNOWN",
+        "receipt_id": "1"
+      },
+      {
+        "item_no": 6,
+        "item_name": "SIBIOIAL",
+        "price": 38.68,
+        "store_name": "joiOES GOlEI Cfzsll",
+        "date": "UNKNOWN",
+        "receipt_id": "1"
+      },
+      {
+        "item_no": 7,
+        "item_name": "TOT",
+        "price": 438.68,
+        "store_name": "joiOES GOlEI Cfzsll",
+        "date": "UNKNOWN",
+        "receipt_id": "1"
+      },
+      {
+        "item_no": 8,
+        "item_name": "LOI MOSTCR SALE WEA QA",
+        "price": 16.93,
+        "store_name": "SpADQ",
+        "date": "UNKNOWN",
+        "receipt_id": "10"
+      },
+      {
+        "item_no": 9,
+        "item_name": "PEALED NTS",
+        "price": 4.99,
+        "store_name": "SpADQ",
+        "date": "UNKNOWN",
+        "receipt_id": "10"
+      },
+      {
+        "item_no": 10,
+        "item_name": "NESTUE AE0 0",
+        "price": 24.99,
+        "store_name": "SpADQ",
+        "date": "UNKNOWN",
+        "receipt_id": "10"
+      },
+      {
+        "item_no": 11,
+        "item_name": "VASTIC RICE JOU 2N0 0.5",
+        "price": 21.93,
+        "store_name": "SpADQ",
+        "date": "UNKNOWN",
+        "receipt_id": "10"
+      },
+      {
+        "item_no": 12,
+        "item_name": "I.16",
+        "price": 15.93,
+        "store_name": "SpADQ",
+        "date": "UNKNOWN",
+        "receipt_id": "10"
+      },
+      {
+        "item_no": 13,
+        "item_name": "01A969 FO M TUS",
+        "price": 1.16,
+        "store_name": "SpADQ",
+        "date": "UNKNOWN",
+        "receipt_id": "10"
+      },
+      {
+        "item_no": 14,
+        "item_name": "ALIP M CSUER 6 16 17",
+        "price": 8.21,
+        "store_name": "SpADQ",
+        "date": "UNKNOWN",
+        "receipt_id": "10"
+      },
+      {
+        "item_no": 15,
+        "item_name": "VC 42 OFF  VC FII",
+        "price": 2.0,
+        "store_name": "WHZLE",
+        "date": "UNKNOWN",
+        "receipt_id": "11"
+      },
+      {
+        "item_no": 16,
+        "item_name": "CALIFORNLE HARVEST",
+        "price": 2.69,
+        "store_name": "WHZLE",
+        "date": "UNKNOWN",
+        "receipt_id": "11"
+      },
+      {
+        "item_no": 17,
+        "item_name": "T PLUHS BLACK CV",
+        "price": 2.15,
+        "store_name": "WHZLE",
+        "date": "UNKNOWN",
+        "receipt_id": "11"
+      },
+      {
+        "item_no": 18,
+        "item_name": "MHP SLICED OVEM RO",
+        "price": 3.99,
+        "store_name": "WHZLE",
+        "date": "UNKNOWN",
+        "receipt_id": "11"
+      },
+      {
+        "item_no": 19,
+        "item_name": "NHP SLICED HICKORY",
+        "price": 3.99,
+        "store_name": "WHZLE",
+        "date": "UNKNOWN",
+        "receipt_id": "11"
+      },
+      {
+        "item_no": 20,
+        "item_name": "J T",
+        "price": 0.62,
+        "store_name": "WALMART",
+        "date": "UNKNOWN",
+        "receipt_id": "13"
+      },
+      {
+        "item_no": 21,
+        "item_name": "CMI CM4I UBITLI3J",
+        "price": 50.0,
+        "store_name": "WALMART",
+        "date": "UNKNOWN",
+        "receipt_id": "13"
+      },
+      {
+        "item_no": 22,
+        "item_name": "RAVIERIES F OROUSIZ G4 A WMUBLLD",
+        "price": 10.91,
+        "store_name": "WALMART",
+        "date": "10.08.26",
+        "receipt_id": "18"
+      },
+      {
+        "item_no": 23,
+        "item_name": "QANN NNI FAN OLALDIED WHIPINA",
+        "price": 2.91,
+        "store_name": "WALMART",
+        "date": "10.08.26",
+        "receipt_id": "18"
+      },
+      {
+        "item_no": 24,
+        "item_name": "CRILL COMR 4178944021",
+        "price": 44.97,
+        "store_name": "WALMART",
+        "date": "10/16/21",
+        "receipt_id": "19"
+      },
+      {
+        "item_no": 25,
+        "item_name": "CLERL IEARI 0U18 I1 F",
+        "price": 2.48,
+        "store_name": "WALMART",
+        "date": "10/16/21",
+        "receipt_id": "19"
+      },
+      {
+        "item_no": 26,
+        "item_name": "IB 1 6 I1DD",
+        "price": 3.64,
+        "store_name": "WALMART",
+        "date": "10/16/21",
+        "receipt_id": "19"
+      },
+      {
+        "item_no": 27,
+        "item_name": "STOPCAPD REDIPHIO",
+        "price": 35.05,
+        "store_name": "WALMART",
+        "date": "10/16/21",
+        "receipt_id": "19"
+      },
+      {
+        "item_no": 28,
+        "item_name": "6652 6669 B05",
+        "price": 1.17,
+        "store_name": "WALMART",
+        "date": "10/16/21",
+        "receipt_id": "19"
+      },
+      {
+        "item_no": 29,
+        "item_name": "OAILEAL 007874243408 0",
+        "price": 1.76,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 30,
+        "item_name": "O12002 IA 081236803115",
+        "price": 6.74,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 31,
+        "item_name": "AIILEIICS 0191045677781",
+        "price": 24.91,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 32,
+        "item_name": "DEXAS 1570 008429710921",
+        "price": 12.97,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 33,
+        "item_name": "SUBIOIAL",
+        "price": 46.44,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 34,
+        "item_name": "C IM 10",
+        "price": 3.46,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 35,
+        "item_name": "TOIA",
+        "price": 49.9,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 36,
+        "item_name": "TOIALPUROMSE",
+        "price": 49.9,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 37,
+        "item_name": "1820.42",
+        "price": 11.3,
+        "store_name": "WALMART",
+        "date": "10/18/20",
+        "receipt_id": "2"
+      },
+      {
+        "item_no": 38,
+        "item_name": "G30UL D8",
+        "price": 80.0,
+        "store_name": "Dollar Tnee Stores Inc.",
+        "date": "UNKNOWN",
+        "receipt_id": "21"
+      },
+      {
+        "item_no": 39,
+        "item_name": "SALES IA",
+        "price": 0.21,
+        "store_name": "Dollar Tnee Stores Inc.",
+        "date": "UNKNOWN",
+        "receipt_id": "21"
+      },
+      {
+        "item_no": 40,
+        "item_name": "CIG BEEI",
+        "price": 310.0,
+        "store_name": "Dollar Tnee Stores Inc.",
+        "date": "UNKNOWN",
+        "receipt_id": "21"
+      },
+      {
+        "item_no": 41,
+        "item_name": "MHERE EVERVTHIM S",
+        "price": 1.0,
+        "store_name": "Dollar Tnee Stores Inc.",
+        "date": "UNKNOWN",
+        "receipt_id": "21"
+      },
+      {
+        "item_no": 42,
+        "item_name": "X KE-BER 1826278335",
+        "price": 23.99,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 43,
+        "item_name": "FFBS BREAST",
+        "price": 6.49,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 44,
+        "item_name": "KS DICED TO4",
+        "price": 2.97,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 45,
+        "item_name": "I8CT EGGS",
+        "price": 12.87,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 46,
+        "item_name": "77053 GRIPE TOKATO",
+        "price": 6.29,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 47,
+        "item_name": "ECO HALE PAN",
+        "price": 6.49,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 48,
+        "item_name": "GRHD IURKEY",
+        "price": 18.47,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 49,
+        "item_name": "OPD ONION",
+        "price": 3.59,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 50,
+        "item_name": "SUBTOIAL",
+        "price": 85.61,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 51,
+        "item_name": "CHECK MERBER PRNTD",
+        "price": 9.13,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 52,
+        "item_name": "A7 IAX",
+        "price": 0.55,
+        "store_name": "coxc",
+        "date": "UNKNOWN",
+        "receipt_id": "8"
+      },
+      {
+        "item_no": 53,
+        "item_name": "DISCT 359",
+        "price": 10.0,
+        "store_name": "tan woon yann",
+        "date": "UNKNOWN",
+        "receipt_id": "X00016469619"
+      },
+      {
+        "item_no": 54,
+        "item_name": "18350846 3. 88",
+        "price": 3.88,
+        "store_name": "TESCO",
+        "date": "UNKNOWN",
+        "receipt_id": "X00016469620"
+      },
+      {
+        "item_no": 55,
+        "item_name": "TOMAL RM",
+        "price": 33.92,
+        "store_name": "TESCO",
+        "date": "UNKNOWN",
+        "receipt_id": "X00016469620"
+      },
+      {
+        "item_no": 56,
         "item_name": "ROUNDING ADJUSTHE RH",
-        "quantity_purchased": 1,
-        "total_spent": 0.02,
-        "average_unit_price": 0.02
+        "price": 0.02,
+        "store_name": "TESCO",
+        "date": "UNKNOWN",
+        "receipt_id": "X00016469620"
+      },
+      {
+        "item_no": 57,
+        "item_name": "IOTAL ROUNDED 33.F0 RH",
+        "price": 33.9,
+        "store_name": "TESCO",
+        "date": "UNKNOWN",
+        "receipt_id": "X00016469620"
+      },
+      {
+        "item_no": 58,
+        "item_name": "PLUSTLC",
+        "price": 31.0,
+        "store_name": "tan chay yee",
+        "date": "09/01/2019",
+        "receipt_id": "X00016469669"
+      },
+      {
+        "item_no": 59,
+        "item_name": "TOLAL AMOUNT",
+        "price": 31.0,
+        "store_name": "tan chay yee",
+        "date": "09/01/2019",
+        "receipt_id": "X00016469669"
+      },
+      {
+        "item_no": 60,
+        "item_name": "TE 07-308 2218 FAA.8 0216",
+        "price": 7.3,
+        "store_name": "tan chay yee",
+        "date": "15/01/2019",
+        "receipt_id": "X00016469670"
+      },
+      {
+        "item_no": 61,
+        "item_name": "DALE 15012019 1. AM",
+        "price": 5.16,
+        "store_name": "tan chay yee",
+        "date": "15/01/2019",
+        "receipt_id": "X00016469670"
+      },
+      {
+        "item_no": 62,
+        "item_name": "COCOOOI1 SR",
+        "price": 193.0,
+        "store_name": "tan chay yee",
+        "date": "15/01/2019",
+        "receipt_id": "X00016469670"
+      },
+      {
+        "item_no": 63,
+        "item_name": "TEL07-380 2218 FAX.8 0210",
+        "price": 7.38,
+        "store_name": "tan chay yee",
+        "date": "02/01/2019",
+        "receipt_id": "X00016469671"
+      },
+      {
+        "item_no": 64,
+        "item_name": "JOU 00J",
+        "price": 327.0,
+        "store_name": "tan chay yee",
+        "date": "UNKNOWN",
+        "receipt_id": "X00016469672"
+      },
+      {
+        "item_no": 65,
+        "item_name": "CBLE IN TE",
+        "price": 3.0,
+        "store_name": "Ix MVOICE V0  19729058",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230605"
+      },
+      {
+        "item_no": 66,
+        "item_name": "SAND-ICH VENIII",
+        "price": 1.9,
+        "store_name": "Ix MVOICE V0  19729058",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230605"
+      },
+      {
+        "item_no": 67,
+        "item_name": "CHANVE",
+        "price": 0.1,
+        "store_name": "Ix MVOICE V0  19729058",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230605"
+      },
+      {
+        "item_no": 68,
+        "item_name": ". 00R 4462",
+        "price": 0.28,
+        "store_name": "Ix MVOICE V0  19729058",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230605"
+      },
+      {
+        "item_no": 69,
+        "item_name": "GRILALCA1",
+        "price": 12.5,
+        "store_name": "Qpser.",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230616"
+      },
+      {
+        "item_no": 70,
+        "item_name": "IQIAL LOWS 61 651",
+        "price": 2.7,
+        "store_name": "Qpser.",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230616"
+      },
+      {
+        "item_no": 71,
+        "item_name": ".J . JALEN 552140 PETALING JARA",
+        "price": 39.47,
+        "store_name": "Jce",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230617"
+      },
+      {
+        "item_no": 72,
+        "item_name": "REG 019- 1801Z018 I0",
+        "price": 21.02,
+        "store_name": "Jce",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230617"
+      },
+      {
+        "item_no": 73,
+        "item_name": "SROA1",
+        "price": 0.36,
+        "store_name": "BANDAR UTAMA BATANG KAi",
+        "date": "29/01/2018",
+        "receipt_id": "X51005230648"
+      },
+      {
+        "item_no": 74,
+        "item_name": "SROA",
+        "price": 0.45,
+        "store_name": "Oy RM",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005230657"
+      },
+      {
+        "item_no": 75,
+        "item_name": "ZOX30 IKG",
+        "price": 8.0,
+        "store_name": "Sekysen 8 Bandar Utama 44300",
+        "date": "08/01/2018",
+        "receipt_id": "X51005230659"
+      },
+      {
+        "item_no": 76,
+        "item_name": "INDUDED MU TETEL",
+        "price": 0.45,
+        "store_name": "Sekysen 8 Bandar Utama 44300",
+        "date": "08/01/2018",
+        "receipt_id": "X51005230659"
+      },
+      {
+        "item_no": 77,
+        "item_name": "1X 5",
+        "price": 8.9,
+        "store_name": "H E0g WnicoRN IUIN ISUFER Glue Usg-99 -",
+        "date": "29-12-2017",
+        "receipt_id": "X51005255805"
+      },
+      {
+        "item_no": 78,
+        "item_name": "S1 RA",
+        "price": 0.8,
+        "store_name": "H E0g WnicoRN IUIN ISUFER Glue Usg-99 -",
+        "date": "29-12-2017",
+        "receipt_id": "X51005255805"
+      },
+      {
+        "item_no": 79,
+        "item_name": "E8XNCE",
+        "price": 8.88,
+        "store_name": "exeala 50",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268200"
+      },
+      {
+        "item_no": 80,
+        "item_name": "SR",
+        "price": 15.9,
+        "store_name": "Home MaSTeR Hardwiare &",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268262"
+      },
+      {
+        "item_no": 81,
+        "item_name": "SUBTOTAI",
+        "price": 15.9,
+        "store_name": "Home MaSTeR Hardwiare &",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268262"
+      },
+      {
+        "item_no": 82,
+        "item_name": "TOLD AML ROUNDED",
+        "price": 15.9,
+        "store_name": "Home MaSTeR Hardwiare &",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268262"
+      },
+      {
+        "item_no": 83,
+        "item_name": "PARMENT -",
+        "price": 50.0,
+        "store_name": "Home MaSTeR Hardwiare &",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268262"
+      },
+      {
+        "item_no": 84,
+        "item_name": "CANGE DUE",
+        "price": 3.1,
+        "store_name": "Home MaSTeR Hardwiare &",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268262"
+      },
+      {
+        "item_no": 85,
+        "item_name": "G0",
+        "price": 0.9,
+        "store_name": "Home MaSTeR Hardwiare &",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268262"
+      },
+      {
+        "item_no": 86,
+        "item_name": "AANT BHZI.01",
+        "price": 1.57,
+        "store_name": "aant Bhzi 01.57.01",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268275"
+      },
+      {
+        "item_no": 87,
+        "item_name": "DAIE 4228201 IQ PW",
+        "price": 17.32,
+        "store_name": "RESTORAN  HASSANBISTRO",
+        "date": "2017-12-28",
+        "receipt_id": "X51005268400"
+      },
+      {
+        "item_no": 88,
+        "item_name": ". ZR",
+        "price": 15.0,
+        "store_name": "RESTORAN  HASSANBISTRO",
+        "date": "2017-12-28",
+        "receipt_id": "X51005268400"
+      },
+      {
+        "item_no": 89,
+        "item_name": "ST 68",
+        "price": 15.0,
+        "store_name": "RESTORAN  HASSANBISTRO",
+        "date": "2017-12-28",
+        "receipt_id": "X51005268400"
+      },
+      {
+        "item_no": 90,
+        "item_name": "ROUNDING",
+        "price": 15.0,
+        "store_name": "RESTORAN  HASSANBISTRO",
+        "date": "2017-12-28",
+        "receipt_id": "X51005268400"
+      },
+      {
+        "item_no": 91,
+        "item_name": "DISNY 0511 VICA 420 2N",
+        "price": 5.69,
+        "store_name": "93 Eoze0 Nant Sv8 515537-K",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268408"
+      },
+      {
+        "item_no": 92,
+        "item_name": "ROUNFING 30 1S",
+        "price": 7.8,
+        "store_name": "93 Eoze0 Nant Sv8 515537-K",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268408"
+      },
+      {
+        "item_no": 93,
+        "item_name": "CAG RA",
+        "price": 30.2,
+        "store_name": "93 Eoze0 Nant Sv8 515537-K",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268408"
+      },
+      {
+        "item_no": 94,
+        "item_name": "A81",
+        "price": 160.17,
+        "store_name": "93 Eoze0 Nant Sv8 515537-K",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268408"
+      },
+      {
+        "item_no": 95,
+        "item_name": "DOARO CS0IB 00000",
+        "price": 0.07,
+        "store_name": "Asulart",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005268472"
+      },
+      {
+        "item_no": 96,
+        "item_name": ". ID 1459",
+        "price": 23.05,
+        "store_name": "CORPORATION S8",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005288570"
+      },
+      {
+        "item_no": 97,
+        "item_name": ".18 1527",
+        "price": 23.03,
+        "store_name": "CORPORATION S8",
+        "date": "UNKNOWN",
+        "receipt_id": "X51005288570"
       }
     ]
   },

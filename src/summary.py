@@ -9,12 +9,13 @@ class SummaryGenerator:
         total_spend = 0.0
         transaction_count = len(receipt_results)
         store_spend_map = {}
-        store_count_map = {}
-        item_stats_map = {}
+        store_items_map = {}
+        store_tx_map = {}
+        itemized_register = []
         reliable_count = 0
         unreliable_count = 0
         transactions_detail = []
-        total_items_purchased = 0
+        global_item_counter = 0
 
         for rec in receipt_results:
             conf_data = rec.get("confidence_output", {})
@@ -31,6 +32,7 @@ class SummaryGenerator:
 
             date_str = conf_data.get("date", {}).get("value", "UNKNOWN")
             is_reliable = conf_data.get("overall_reliability", {}).get("is_reliable", False)
+            receipt_id = rec.get("receipt_id", "")
 
             if is_reliable:
                 reliable_count += 1
@@ -39,7 +41,7 @@ class SummaryGenerator:
 
             total_spend += tot_val
             store_spend_map[store_name] = store_spend_map.get(store_name, 0.0) + tot_val
-            store_count_map[store_name] = store_count_map.get(store_name, 0) + 1
+            store_tx_map[store_name] = store_tx_map.get(store_name, 0) + 1
 
             items_list = conf_data.get("items", {}).get("value", [])
             receipt_item_count = 0
@@ -53,19 +55,21 @@ class SummaryGenerator:
                     iprice = 0.0
 
                 if iname and len(iname) >= 2:
+                    global_item_counter += 1
                     receipt_item_count += 1
-                    total_items_purchased += 1
-                    if iname not in item_stats_map:
-                        item_stats_map[iname] = {
-                            "item_name": iname,
-                            "quantity_purchased": 0,
-                            "total_spent": 0.0
-                        }
-                    item_stats_map[iname]["quantity_purchased"] += 1
-                    item_stats_map[iname]["total_spent"] += iprice
+                    store_items_map[store_name] = store_items_map.get(store_name, 0) + 1
+
+                    itemized_register.append({
+                        "item_no": global_item_counter,
+                        "item_name": iname,
+                        "price": round(iprice, 2),
+                        "store_name": store_name,
+                        "date": date_str,
+                        "receipt_id": receipt_id
+                    })
 
             transactions_detail.append({
-                "receipt_id": rec.get("receipt_id", ""),
+                "receipt_id": receipt_id,
                 "store_name": store_name,
                 "date": date_str,
                 "items_count": receipt_item_count,
@@ -76,39 +80,32 @@ class SummaryGenerator:
         avg_spend = round(total_spend / transaction_count, 2) if transaction_count > 0 else 0.0
         total_spend = round(total_spend, 2)
 
-        spend_per_store = {}
+        store_shopping_summary = []
         for sname, sspend in store_spend_map.items():
-            spend_per_store[sname] = {
-                "total_spend": round(sspend, 2),
-                "transaction_count": store_count_map[sname],
-                "average_spend": round(sspend / store_count_map[sname], 2) if store_count_map[sname] > 0 else 0.0,
+            scount = store_tx_map.get(sname, 0)
+            sitems = store_items_map.get(sname, 0)
+            avg_item_price = round(sspend / sitems, 2) if sitems > 0 else 0.0
+            store_shopping_summary.append({
+                "store_name": sname,
+                "total_shopping_amount": round(sspend, 2),
+                "items_purchased_count": sitems,
+                "transaction_count": scount,
+                "average_item_price": avg_item_price,
                 "percentage_of_total": round((sspend / total_spend * 100.0), 2) if total_spend > 0 else 0.0
-            }
-
-        purchased_items_breakdown = []
-        for iname, istats in item_stats_map.items():
-            qty = istats["quantity_purchased"]
-            tot = round(istats["total_spent"], 2)
-            avg_unit = round(tot / qty, 2) if qty > 0 else 0.0
-            purchased_items_breakdown.append({
-                "item_name": iname,
-                "quantity_purchased": qty,
-                "total_spent": tot,
-                "average_unit_price": avg_unit
             })
 
-        purchased_items_breakdown.sort(key=lambda x: x["total_spent"], reverse=True)
+        store_shopping_summary.sort(key=lambda x: x["total_shopping_amount"], reverse=True)
         highest_tx = max(transactions_detail, key=lambda x: x["total_amount"]) if transactions_detail else None
 
         summary_output = {
             "financial_summary": {
                 "total_spend": total_spend,
                 "number_of_transactions": transaction_count,
-                "total_items_purchased": total_items_purchased,
+                "total_items_purchased": global_item_counter,
                 "average_transaction_spend": avg_spend,
                 "highest_transaction": highest_tx,
-                "spend_per_store": spend_per_store,
-                "purchased_items_breakdown": purchased_items_breakdown
+                "store_shopping_summary": store_shopping_summary,
+                "itemized_purchase_register": itemized_register
             },
             "reliability_summary": {
                 "reliable_transactions_count": reliable_count,
