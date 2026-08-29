@@ -1,0 +1,39 @@
+{
+  "store_name": {
+    "value": "H E0g WnicoRN IUIN ISUFER Glue Usg-99 -",
+    "confidence": 0.45,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "29-12-2017",
+    "confidence": 0.77,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [
+      {
+        "name": "1X 5",
+        "price": "8.90"
+      },
+      {
+        "name": "S1 RA",
+        "price": "0.80"
+      }
+    ],
+    "confidence": 0.53,
+    "low_confidence": true
+  },
+  "total_amount": {
+    "value": "20.00",
+    "confidence": 0.75,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.62,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence line items",
+      "Low confidence store name"
+    ]
+  }
+}

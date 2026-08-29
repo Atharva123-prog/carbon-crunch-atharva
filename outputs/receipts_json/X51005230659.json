@@ -1,0 +1,39 @@
+{
+  "store_name": {
+    "value": "Sekysen 8 Bandar Utama 44300",
+    "confidence": 0.64,
+    "low_confidence": true
+  },
+  "date": {
+    "value": "08/01/2018",
+    "confidence": 0.82,
+    "low_confidence": false
+  },
+  "items": {
+    "value": [
+      {
+        "name": "Zox30 IkG",
+        "price": "8.00"
+      },
+      {
+        "name": "Induded Mu Tetel",
+        "price": "0.45"
+      }
+    ],
+    "confidence": 0.76,
+    "low_confidence": false
+  },
+  "total_amount": {
+    "value": "8.00",
+    "confidence": 0.81,
+    "low_confidence": false
+  },
+  "overall_reliability": {
+    "average_confidence": 0.76,
+    "is_reliable": false,
+    "warnings": [
+      "Low confidence store name",
+      "Total amount is less than calculated sum of item prices"
+    ]
+  }
+}
