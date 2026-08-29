@@ -23,8 +23,8 @@
     "average_confidence": 0.58,
     "is_reliable": false,
     "warnings": [
-      "Low confidence total amount",
       "Total amount inferred without keyword anchor",
+      "Low confidence total amount",
       "No items extracted"
     ]
   }

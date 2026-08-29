@@ -1,35 +1,32 @@
 {
   "store_name": {
-    "value": "WAL-MART",
-    "confidence": 0.97,
-    "low_confidence": false
+    "value": "WAL MART",
+    "confidence": 0.66,
+    "low_confidence": true
   },
   "date": {
-    "value": "10/20/07",
-    "confidence": 0.87,
-    "low_confidence": false
+    "value": "UNKNOWN",
+    "confidence": 0.0,
+    "low_confidence": true
   },
   "items": {
-    "value": [
-      {
-        "name": "Footherosf 003500055500 065356920144 X",
-        "price": "6.63"
-      }
-    ],
-    "confidence": 0.77,
-    "low_confidence": false
+    "value": [],
+    "confidence": 0.0,
+    "low_confidence": true
   },
   "total_amount": {
-    "value": "17.45",
-    "confidence": 0.68,
+    "value": "0.00",
+    "confidence": 0.0,
     "low_confidence": true
   },
   "overall_reliability": {
-    "average_confidence": 0.82,
+    "average_confidence": 0.17,
     "is_reliable": false,
     "warnings": [
-      "Low confidence total amount",
-      "Total amount inferred without keyword anchor"
+      "Total amount is zero or negative",
+      "Missing transaction date",
+      "No items extracted",
+      "Low confidence store name"
     ]
   }
 }

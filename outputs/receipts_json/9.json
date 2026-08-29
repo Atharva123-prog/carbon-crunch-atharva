@@ -24,10 +24,10 @@
     "is_reliable": false,
     "warnings": [
       "Total amount inferred without keyword anchor",
-      "No items extracted",
-      "Low confidence store name",
       "Low confidence total amount",
-      "Missing transaction date"
+      "Missing transaction date",
+      "Low confidence store name",
+      "No items extracted"
     ]
   }
 }

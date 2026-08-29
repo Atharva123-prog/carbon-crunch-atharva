@@ -32,8 +32,8 @@
     "average_confidence": 0.76,
     "is_reliable": false,
     "warnings": [
-      "Low confidence store name",
-      "Total amount is less than calculated sum of item prices"
+      "Total amount is less than calculated sum of item prices",
+      "Low confidence store name"
     ]
   }
 }

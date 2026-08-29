@@ -23,8 +23,8 @@
     "average_confidence": 0.55,
     "is_reliable": false,
     "warnings": [
-      "Low confidence store name",
-      "No items extracted"
+      "No items extracted",
+      "Low confidence store name"
     ]
   }
 }

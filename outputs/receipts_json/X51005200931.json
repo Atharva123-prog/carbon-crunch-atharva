@@ -23,11 +23,11 @@
     "average_confidence": 0.06,
     "is_reliable": false,
     "warnings": [
-      "No items extracted",
-      "Low confidence store name",
-      "Short or ambiguous store name",
       "Total amount is zero or negative",
-      "Missing transaction date"
+      "Short or ambiguous store name",
+      "Missing transaction date",
+      "Low confidence store name",
+      "No items extracted"
     ]
   }
 }

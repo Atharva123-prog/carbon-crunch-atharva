@@ -36,8 +36,8 @@
     "average_confidence": 0.72,
     "is_reliable": false,
     "warnings": [
-      "Low confidence line items",
-      "Total amount is less than calculated sum of item prices"
+      "Total amount is less than calculated sum of item prices",
+      "Low confidence line items"
     ]
   }
 }

@@ -28,9 +28,9 @@
     "average_confidence": 0.47,
     "is_reliable": false,
     "warnings": [
+      "Missing transaction date",
       "Low confidence total amount",
-      "Low confidence line items",
-      "Missing transaction date"
+      "Low confidence line items"
     ]
   }
 }

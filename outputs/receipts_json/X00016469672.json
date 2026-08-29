@@ -28,10 +28,10 @@
     "average_confidence": 0.47,
     "is_reliable": false,
     "warnings": [
-      "Low confidence total amount",
       "Total amount inferred without keyword anchor",
-      "Low confidence line items",
-      "Missing transaction date"
+      "Missing transaction date",
+      "Low confidence total amount",
+      "Low confidence line items"
     ]
   }
 }

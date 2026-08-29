@@ -1,7 +1,7 @@
 {
   "store_name": {
     "value": "WALMART",
-    "confidence": 0.97,
+    "confidence": 1.0,
     "low_confidence": false
   },
   "date": {
@@ -10,22 +10,30 @@
     "low_confidence": true
   },
   "items": {
-    "value": [],
-    "confidence": 0.0,
+    "value": [
+      {
+        "name": "J T",
+        "price": "0.62"
+      },
+      {
+        "name": "Cmi Cm4i Ubitli3J",
+        "price": "50.00"
+      }
+    ],
+    "confidence": 0.54,
     "low_confidence": true
   },
   "total_amount": {
-    "value": "0.00",
-    "confidence": 0.0,
-    "low_confidence": true
+    "value": "50.62",
+    "confidence": 0.71,
+    "low_confidence": false
   },
   "overall_reliability": {
-    "average_confidence": 0.24,
+    "average_confidence": 0.56,
     "is_reliable": false,
     "warnings": [
-      "No items extracted",
       "Missing transaction date",
-      "Total amount is zero or negative"
+      "Low confidence line items"
     ]
   }
 }

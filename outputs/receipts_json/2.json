@@ -60,8 +60,8 @@
     "average_confidence": 0.79,
     "is_reliable": false,
     "warnings": [
-      "Low confidence total amount",
       "Total amount inferred without keyword anchor",
+      "Low confidence total amount",
       "Total amount is less than calculated sum of item prices"
     ]
   }

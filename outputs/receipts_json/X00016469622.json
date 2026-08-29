@@ -23,9 +23,9 @@
     "average_confidence": 0.19,
     "is_reliable": false,
     "warnings": [
-      "No items extracted",
       "Total amount is zero or negative",
-      "Missing transaction date"
+      "Missing transaction date",
+      "No items extracted"
     ]
   }
 }
